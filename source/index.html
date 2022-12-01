@@ -7,7 +7,7 @@
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo logo" href="index.html">
-        <img class="logo__image" src="../images/images/mishka-logo-mobile.svg" alt="Логотип магазина Мишка.">
+        <img class="logo__image" src="img/mishka-logo-mobile.svg" alt="Логотип магазина Мишка.">
       </a>
       <nav class="page-header__main-nav main-nav">
         <button class="main-nav__toggle menu-toggle" type="button">
@@ -23,15 +23,12 @@
             <li class="menu-list__item">
               <a class="menu-list__link" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="menu-list__item search">
-              <form class="search__form form" action="https://echo.htmlacademy.ru/" method="get">
-               <input class="form__input" type="text" placeholder="Поиск по сайту">
-               <button class="form__button" type="submit">
-                <svg class="form__button__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="m17.7 16.06-3.48-3.48a7.63 7.63 0 0 0 1.53-4.7c0-4.4-3.48-7.88-7.88-7.88A7.81 7.81 0 0 0 0 7.88c0 4.4 3.48 7.87 7.88 7.87 1.73 0 3.37-.61 4.7-1.53l3.48 3.47c.2.2.4.31.82.31.6 0 1.12-.51 1.12-1.13 0-.2-.1-.5-.3-.81ZM2.24 7.88a5.67 5.67 0 0 1 5.63-5.63 5.67 5.67 0 0 1 5.62 5.63 5.67 5.67 0 0 1-5.63 5.62 5.67 5.67 0 0 1-5.62-5.63Z" fill="#000"/>
+            <li class="menu-list__item">
+              <a  class="menu-list__link search-link" href="#">
+                <svg class="search-link__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="m17.7 16.06-3.48-3.48a7.63 7.63 0 0 0 1.53-4.7c0-4.4-3.48-7.88-7.88-7.88A7.81 7.81 0 0 0 0 7.88c0 4.4 3.48 7.87 7.88 7.87 1.73 0 3.37-.61 4.7-1.53l3.48 3.47c.2.2.4.31.82.31.6 0 1.12-.51 1.12-1.13 0-.2-.1-.5-.3-.81ZM2.24 7.88a5.67 5.67 0 0 1 5.63-5.63 5.67 5.67 0 0 1 5.62 5.63 5.67 5.67 0 0 1-5.63 5.62 5.67 5.67 0 0 1-5.62-5.63Z" fill="#000"/>
                 </svg>
-                <span class="visually-hidden">Найти.</span>
-               </button>
-              </form>
+                <p class="search-link__text">Поиск по сайту</p>
+              </a>
             </li>
             <li class="menu-list__item">
               <a class="menu-list__link cart-link">
@@ -62,12 +59,12 @@
       </section>
       <section class="promotion">
         <h2 class="promotion__title">ТОВАР НЕДЕЛИ</h2>
-        <div class="promotion__product product">
-          <h3 class="product__title title">Вязаные корзинки</h3>
-          <p class="product__description">Экологически чистая пряжа,
+        <div class="promotion__product promo-product">
+          <h3 class="promo-product__title title">Вязаные корзинки</h3>
+          <p class="promo-product__description">Экологически чистая пряжа,
 ручная работа. Доступны в шести расцветках и трёх размерах.
           </p>
-          <table class="product__features features">
+          <table class="promo-product__features features">
             <tr class="features__list">
               <th class="features__item">Цвет:</th>
               <td class="features__value">тиффани/серый</td>
@@ -81,9 +78,9 @@
               <td class="features__value">15 см</td>
             </tr>
           </table>
-          <img class="product__image" src="../images/files/promotion-product-photo.jpg" width="260" height="315" alt="Вязаные корзинки в трех размерах.">
-          <span class="product__price">Цена: 990 руб.</span>
-          <button class="product__button button" type="button">Заказать</button>
+          <img class="promo-product__image" src="img/promotion-product-photo.jpg" width="260" height="315" alt="Вязаные корзинки в трех размерах.">
+          <p class="promo-product__price">Цена: 990 руб.</p>
+          <button class="promo-product__button button" type="button">Заказать</button>
         </div>
 
       </section>
@@ -92,7 +89,7 @@
         <ul class="advantages__list">
           <li class="advantages__item">Экологически чистые материалы</li>
           <li class="advantages__item">Скандинавский стиль по&nbsp;российской цене</li>
-          <li class="advantages__item">Увеличивает лайки&nbsp;на фотографиях</li>
+          <li class="advantages__item">Увеличивает лайки на&nbsp;фотографиях</li>
           <li class="advantages__item">Связано вручную с любовью и умилением</li>
           <li class="advantages__item">Поддержка отечественного производителя</li>
           <li class="advantages__item">Поставляется в подарочной упаковке</li>
@@ -112,12 +109,12 @@
             </cite>
           </blockquote>
         </div>
-        <div class="slider__control control">
-          <button class="control__button button-prev">
+        <div class="review-slider__control slider-control">
+          <button class="slider-control__button button-prev">
             <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4Z" fill="#000"/>
             </svg>
           </button>
-          <button class="control__button button-next">
+          <button class="slider-control__button button-next">
             <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 11h42.3l-8.1-8.2L37 0l13 13-13 13-2.8-2.8 8.1-8.2H0v-4Z" fill="#000"/>
             </svg>
           </button>
@@ -126,39 +123,41 @@
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <div class="contacts__email email">
-          <span class="email__title">e-mail:</span>
-          <a class="email__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        <div class="contacts__wrapper">
+          <span class="contacts__title">e-mail:</span>
+          <a class="contacts__link" href="mailto:info@mimimishkashop.ru">
+            <p class="contacts__text">info@mimimishkashop.ru</p>
+          </a>
         </div>
-        <address class="contacts__address address">
-          <span  class="address__title">адрес:</span>
-          <p class="address__text">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101
+        <address class="contacts__wrapper">
+          <span  class="contacts__title">адрес:</span>
+          <p class="contacts__text">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101
           </p>
         </address>
         <div class="contacts__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3027217764974!2d30.3230501!3d59.938689!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1669655762491!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
-      <div class="sabscribtion">
-        <a class="sabscription__link button" href="#">НАпишите нам</a>
+      <div class="subscription">
+        <a class="subscription__link button" href="#">Напишите нам</a>
       </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__section socials">
         <ul class="socials__list">
-          <li class="socials__item vk">
-            <a class="vk__link">
-              <svg class="vk__icon"></svg>
+          <li class="socials__item">
+            <a class="socials__link">
+              <svg class="socials__icon"></svg>
             </a>
           </li>
-          <li class="socials__item youtube">
-            <a class="youtube__link">
-              <svg class="youtube__icon"></svg>
+          <li class="socials__item">
+            <a class="socials__link">
+              <svg class="socials__icon"></svg>
             </a>
           </li>
-          <li class="socials__item telegram">
-            <a class="telegram__link">
-              <svg class="telegram__icon"></svg>
+          <li class="socials__item">
+            <a class="socials__link">
+              <svg class="socials__icon"></svg>
             </a>
           </li>
         </ul>
