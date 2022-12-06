@@ -1,0 +1,19 @@
+.review {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+
+  &__text {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__author {
+    display: block;
+    margin-top: 33px;
+  }
+}

@@ -1,1 +1,25 @@
 // Начните писать стили здесь
+@use "global/fonts.scss";
+@use "global/visually-hidden.scss";
+@use "global/mixins.scss";
+@use "blocks/page.scss";
+@use "blocks/page-header.scss";
+@use "blocks/logo.scss";
+@use "blocks/menu-toggle.scss";
+@use "blocks/main-container.scss";
+@use "blocks/main-header.scss";
+@use "blocks/main-nav.scss";
+@use "blocks/page-title.scss";
+@use "blocks/menu-list.scss";
+@use "blocks/catalog-sections.scss";
+@use "blocks/catalog-list.scss";
+@use "blocks/catalog-link.scss";
+@use "blocks/promotion.scss";
+@use "blocks/title.scss";
+@use "blocks/promo-product.scss";
+@use "blocks/features.scss";
+@use "blocks/button.scss";
+@use "blocks/advantages.scss";
+@use "blocks/review-slider.scss";
+@use "blocks/review.scss";
+@use "blocks/slider-control.scss";

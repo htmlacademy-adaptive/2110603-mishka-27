@@ -1,0 +1,37 @@
+.promo-product {
+  display: grid;
+
+  &__title {
+    margin-bottom: 41px;
+  }
+
+  &__description {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+    padding-bottom: 28px;
+  }
+
+  &__features {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__image {
+    padding-bottom: 25px;
+  }
+
+  &__price {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #444444;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+}

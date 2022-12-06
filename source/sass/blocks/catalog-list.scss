@@ -1,0 +1,23 @@
+.catalog-list {
+  list-style-type: none;
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  &__item1 {
+    background-color: #63d1bb;
+    background-image: url("../img/interior.svg");
+    background-position: right 36px center;
+    background-repeat: no-repeat;
+    background-size: 40px 62px;
+  }
+
+  &__item2 {
+    background-color: #56c3b2;
+    background-image: url("../img/toy-svg.svg");
+    background-position: right 27px center;
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+  }
+}
+
