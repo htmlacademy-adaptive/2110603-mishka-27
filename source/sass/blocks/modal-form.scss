@@ -1,0 +1,29 @@
+.modal-form {
+  padding-top: 21px;
+  display: grid;
+  grid-template-columns: repeat(3, 82px);
+  column-gap: 7px;
+  row-gap: 31px;
+
+  &__input {
+    cursor: pointer;
+  }
+
+  &__name {
+    display: block;
+    margin: 0 auto;
+    padding: 18px 22px;
+    border: 2px solid rgba(68, 68, 68, 0.1);
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    color: #444444;
+    text-align: center;
+  }
+
+  &__input:checked + &__name {
+    border-color: #63d1bb;
+  }
+}

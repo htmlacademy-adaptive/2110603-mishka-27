@@ -1,3 +1,16 @@
 .main-nav {
   position: relative;
+
+  &__wrapper {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 320px;
+    z-index: 1;
+    background-color: #ffffff;
+
+    &--hidden {
+      display: none;
+    }
+  }
 }

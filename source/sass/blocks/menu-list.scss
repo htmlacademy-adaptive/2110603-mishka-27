@@ -1,7 +1,13 @@
 .menu-list {
+  padding: 0;
+  margin: 0;
   list-style-type: none;
   display: flex;
   flex-direction: column;
+
+  &__item {
+    padding-left: 48px;
+  }
 
   &__link {
     font-family: "Open Sans", sans-serif;
@@ -10,7 +16,7 @@
     line-height: 24px;
     color: #000000;
     text-decoration: none;
+    display: block;
     padding: 28px;
-    padding-left: 76px;
   }
 }

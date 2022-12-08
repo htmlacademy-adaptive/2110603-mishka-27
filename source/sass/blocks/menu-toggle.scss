@@ -1,42 +1,19 @@
-@use "menu-list.scss";
-
 .menu-toggle {
-  display: block;
-  position: relative;
-  top: 0;
-  right: 0;
-  width: 20px;
-  height: 14px;
-  border: none;
   background-color: transparent;
-  cursor: pointer;
+  border: none;
+  position: relative;
 
-  &::before {
-    content: "";
+  &__icon {
     position: absolute;
-    left: 0;
     top: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #231f20;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
     left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #231f20;
+
+    &--closed {
+      fill: transparent;
+    }
   }
 }
 
-.menu-toggle__icon {
-  position: absolute;
-  left: 0;
-  top: 6px;
-  width: 100%;
-  height: 2px;
-  background-color: #231f20;
+.main-nav__wrapper--hidden + .menu-toggle__icon--closed {
+
 }

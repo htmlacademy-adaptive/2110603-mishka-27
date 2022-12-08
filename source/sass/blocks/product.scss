@@ -1,0 +1,39 @@
+.product {
+  display: grid;
+  width: 260px;
+
+  &__image {
+    display: block;
+  }
+
+  &__description {
+    border: 1px solid #ececec;
+    padding: 27px;
+  }
+
+  &__link {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 30px;
+    color: #444444;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__price {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+  }
+}

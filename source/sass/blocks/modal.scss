@@ -1,0 +1,38 @@
+.modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 320px;
+  padding: 28px 30px 46px;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  background-color: #ffffff;
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+  &__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #444444;
+  }
+
+  &__button {
+    width: 260px;
+    background-color: #63d1bb;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}

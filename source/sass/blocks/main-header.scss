@@ -1,19 +1,12 @@
 .main-header {
-  width: 100%;
-  min-height: 294px;
+  padding: 73px 0 113px;
   background-image: url("../img/header-background-image.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 
   &__title {
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-45px);
     width: 260px;
-    margin: 0 auto;
     text-align: center;
   }
 }
