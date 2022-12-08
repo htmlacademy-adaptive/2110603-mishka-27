@@ -1,4 +1,16 @@
 .menu-list {
   list-style-type: none;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+
+  &__link {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+    padding: 28px;
+    padding-left: 76px;
+  }
 }
