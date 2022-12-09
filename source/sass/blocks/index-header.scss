@@ -1,0 +1,13 @@
+.index-header {
+  padding: 73px 0 113px;
+  background-image: url("../img/header-background-image.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    width: 260px;
+    text-align: center;
+  }
+}
+

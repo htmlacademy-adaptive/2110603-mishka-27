@@ -1,0 +1,20 @@
+.form-legend {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 200px;
+    height: 1px;
+    background-color: #62d1ba;
+    position: absolute;
+    top: 8px;
+    left: 60px;
+  }
+}

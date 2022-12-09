@@ -1,9 +1,9 @@
 .page-footer {
   position: relative;
   background-color: #f1f1f1;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   padding: 0 30px;
-  width: 320px;
 
   &::before {
     content: "";

@@ -1,16 +1,25 @@
+@use "../global/mixins.scss";
+
 .main-nav {
   position: relative;
 
+  //  Закрытое меню
+
   &__wrapper {
+    @include mixins.burger;
+    @include mixins.closed-menu;
     position: absolute;
     top: 30px;
     right: 0;
-    width: 320px;
-    z-index: 1;
-    background-color: #ffffff;
+  }
+  //  Открытое меню
 
-    &--hidden {
-      display: none;
-    }
+  &__wrapper--active {
+    @include mixins.cross;
+    @include mixins.opened-menu;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: 1;
   }
 }

@@ -1,0 +1,18 @@
+.form {
+  padding: 17px 30px 55px;
+  margin: 0 auto;
+
+  &__description {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    padding-bottom: 37px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #444444;
+  }
+
+  &__button {
+    width: 260px;
+  }
+}

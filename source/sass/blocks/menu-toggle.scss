@@ -1,19 +1,9 @@
 .menu-toggle {
   background-color: transparent;
   border: none;
-  position: relative;
-
-  &__icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    &--closed {
-      fill: transparent;
-    }
-  }
+  position: absolute;
+  top: -40px;
+  right: 0;
+  cursor: pointer;
 }
 
-.main-nav__wrapper--hidden + .menu-toggle__icon--closed {
-
-}
