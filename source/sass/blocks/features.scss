@@ -1,5 +1,4 @@
 .features {
-  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
@@ -7,7 +6,7 @@
   padding-bottom: 41px;
   text-align: left;
 
-  &__item {
+  .features__item {
     font-weight: 400;
   }
 }

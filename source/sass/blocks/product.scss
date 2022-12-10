@@ -2,35 +2,33 @@
   display: grid;
   width: 260px;
 
-  &__image {
+  .product__image {
     display: block;
   }
 
-  &__description {
+  .product__description {
     border: 1px solid #ececec;
     padding: 27px;
   }
 
-  &__link {
+  .product__link {
     text-decoration: none;
     cursor: pointer;
   }
 
-  &__text {
-    font-family: "Open Sans", sans-serif;
+  .product__text {
     font-weight: 400;
     font-size: 13px;
     line-height: 30px;
     color: #444444;
   }
 
-  &__inner {
+  .product__inner {
     display: flex;
     justify-content: space-between;
   }
 
-  &__price {
-    font-family: "Open Sans", sans-serif;
+  .product__price {
     font-weight: 700;
     font-size: 15px;
     line-height: 24px;

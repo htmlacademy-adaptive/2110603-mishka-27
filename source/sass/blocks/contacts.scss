@@ -1,21 +1,20 @@
 .contacts {
   padding: 38px 0 41px;
 
-  &__title {
+  .contacts__title {
     padding: 0 30px 28px;
   }
 
-  &__wrapper {
+  .contacts__wrapper {
     padding: 0 30px 36px;
     display: flex;
     justify-content: space-between;
   }
 
-  &__text,
-  &__subtitle {
+  .contacts__text,
+  .contacts__subtitle {
     padding: 0;
     margin: 0;
-    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     font-style: normal;
@@ -23,11 +22,11 @@
     color: #444444;
   }
 
-  &__subtitle {
+  .contacts__subtitle {
     padding-right: 30px;
   }
 
-  &__link {
+  .contacts__link {
     color: #444444;
     text-decoration: none;
     position: relative;

@@ -1,39 +1,18 @@
+// Декор зигзаг
+
 @mixin bottom-zigzag {
   background-image: url("../img/zigzag-line.svg");
   background-position: bottom 0 left 0;
   background-repeat: no-repeat;
   background-size: auto;
 }
-// Меню-бургер
-
-@mixin burger {
-  .menu-toggle {
-    z-index: 2;
-  }
-
-  .menu-toggle__icon--close path {
-    fill: transparent;
-  }
-
-  .menu-toggle__icon path {
-    fill:#000000;
-    z-index: 3;
-  }
-}
-
-@mixin cross {
-  .menu-toggle__icon path {
-    fill: transparent;
-  }
-
-  .menu-toggle__icon--close path {
-    fill:#000000;
-  }
-}
+// Выпадающее меню
 
 @mixin opened-menu {
   .menu-list {
     display: flex;
+    flex-direction: column;
+    z-index: 1;
   }
 }
 
@@ -41,5 +20,4 @@
   .menu-list {
     display: none;
   }
-
 }

@@ -10,25 +10,23 @@
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   background-color: #ffffff;
 
-  &__title {
+  .modal__title {
     text-align: center;
     text-transform: uppercase;
-    font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
     color: #000000;
   }
 
-  &__text {
-    font-family: "Open Sans", sans-serif;
+  .modal__text {
     font-weight: 400;
     font-size: 15px;
     line-height: 30px;
     color: #444444;
   }
 
-  &__button {
+  .modal__button {
     width: 260px;
     background-color: #63d1bb;
     border: none;

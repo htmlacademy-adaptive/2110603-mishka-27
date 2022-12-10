@@ -4,15 +4,15 @@
   width: 320px;
   background-color: #ffffff;
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  top: 30px;
+  right: 0;
 
-  &__item {
+  .menu-list__item {
     padding-left: 48px;
   }
 
-  &__link {
-    font-family: "Open Sans", sans-serif;
+  .menu-list__link {
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;

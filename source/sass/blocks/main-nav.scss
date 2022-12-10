@@ -5,21 +5,14 @@
 
   //  Закрытое меню
 
-  &__wrapper {
-    @include mixins.burger;
+  .main-nav__wrapper {
     @include mixins.closed-menu;
-    position: absolute;
-    top: 30px;
-    right: 0;
-  }
+
   //  Открытое меню
 
-  &__wrapper--active {
-    @include mixins.cross;
-    @include mixins.opened-menu;
-    position: absolute;
-    top: 30px;
-    right: 0;
-    z-index: 1;
+    &--active {
+      position: relative;
+      @include mixins.opened-menu;
+    }
   }
 }

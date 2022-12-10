@@ -1,11 +1,17 @@
 .developer {
   display: flex;
+  justify-content: space-between;
+  padding: 12px 59px;
+  align-items: center;
 
-  &__text {
-    font-family: "Open Sans", sans-serif;
+  .developer__text {
     font-weight: 700;
     font-size: 19px;
     line-height: 18px;
     color: #000000;
+  }
+
+  .developer__link {
+    padding: 10px;
   }
 }
