@@ -1,0 +1,18 @@
+@use "../global/mixins.scss";
+
+.main-nav {
+  position: relative;
+
+  //  Закрытое меню
+
+  .main-nav__wrapper {
+    @include mixins.closed-menu;
+
+  //  Открытое меню
+
+    &--active {
+      position: relative;
+      @include mixins.opened-menu;
+    }
+  }
+}

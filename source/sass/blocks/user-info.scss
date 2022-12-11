@@ -1,0 +1,42 @@
+.user-info {
+  border: none;
+  margin-bottom: 30px;
+
+  .user-info__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 22px;
+  }
+
+  .user-info__input {
+    padding: 17px 0;
+    width: 260px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px;
+    line-height: 18px;
+    border: none;
+    border-bottom: 2px solid #000000;
+  }
+
+  .user-info__textarea {
+    width: 260px;
+    height: 142px;
+    padding: 17px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+    color: #000000;
+  }
+
+  .user-info__note {
+    font-size: 14px;
+    line-height: 16px;
+    color: #444444;
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,23 @@
+// Декор зигзаг
+
+@mixin bottom-zigzag {
+  background-image: url("../img/zigzag-line.svg");
+  background-position: bottom 0 left 0;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+// Выпадающее меню
+
+@mixin opened-menu {
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+}
+
+@mixin closed-menu {
+  .menu-list {
+    display: none;
+  }
+}

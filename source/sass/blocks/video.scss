@@ -1,0 +1,39 @@
+.video {
+  margin: 0 auto;
+  padding-top: 21px;
+  padding-bottom: 33px;
+  border: 1px solid #ececec;
+
+  .video__title {
+    margin: 0 13px 26px 91px;
+  }
+
+  .video__container {
+    position: relative;
+  }
+
+  .video__poster {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .video__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50px, -38px);
+  }
+
+  .video__text {
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #444444;
+  }
+
+  .video__cart-link {
+    width: 192px;
+    margin: 0 auto;
+  }
+}

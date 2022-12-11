@@ -1,0 +1,9 @@
+.link-with-icon {
+    position: relative;
+
+    .link-with-icon__icon {
+        position: absolute;
+        left: -20px;
+        top: 30px;
+    }
+}

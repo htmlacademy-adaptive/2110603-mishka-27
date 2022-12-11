@@ -1,0 +1,24 @@
+.menu-list {
+  padding: 0;
+  margin: 0;
+  width: 320px;
+  background-color: #ffffff;
+  list-style-type: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+
+  .menu-list__item {
+    padding-left: 48px;
+  }
+
+  .menu-list__link {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 28px;
+  }
+}

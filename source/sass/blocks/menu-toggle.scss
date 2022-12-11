@@ -1,0 +1,23 @@
+.menu-toggle {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: -40px;
+  right: 0;
+  cursor: pointer;
+  background-image: url(../img/menu.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px auto;
+
+  &--close {
+    background-image: url(../img/menu-close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+  }
+}
+
+

@@ -1,0 +1,35 @@
+.promo-product {
+  display: grid;
+
+  .promo-product__title {
+    margin-bottom: 41px;
+  }
+
+  .promo-product__description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+    padding-bottom: 28px;
+  }
+
+  .promo-product__features {
+    margin: 0;
+    padding: 0;
+  }
+
+  .promo-product__image {
+    padding-bottom: 25px;
+  }
+
+  .promo-product__price {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #444444;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+}

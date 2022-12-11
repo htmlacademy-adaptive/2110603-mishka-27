@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -10,12 +11,10 @@
         <img class="logo__image" src="img/mishka-logo-mobile.svg" alt="Логотип магазина Мишка.">
       </a>
       <nav class="page-header__main-nav main-nav">
-        <button class="main-nav__toggle menu-toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-          <svg class="menu-toggle__icon" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 0H0v2h20V0ZM20 6H0v2h20V6ZM20 12H0v2h20v-2Z" fill="#231F20"/>
-          </svg>
-        </button>
         <div class="main-nav__wrapper">
+          <button class="main-nav__toggle menu-toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
           <ul class="main-nav__list menu-list">
             <li class="menu-list__item">
               <a class="menu-list__link" href="catalog.html">Каталог товаров</a>
@@ -131,7 +130,7 @@
                 <input class="customer-name__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
               </label>
             </li>
-            <li class="user-info__item customer-name">
+            <li class="user-info__item">
               <label class="user-info__label customer-name">
                 <span class="customer-name__title form-subject">Отчество:</span>
                 <input class="customer-name__input" type="text" name="patronym" placeholder="Отчество, если желаете">
@@ -159,8 +158,9 @@
               Опишите все ваши пожелания к заказу
             </textarea>
           </label>
+          <p class="user-info__note">*Поля обязательны для заполнения</p>
         </fieldset>
-        <p class="form__note">*Поля обязательны для заполнения</p>
+
         <button class="form__button button" type="submit">Отправить заказ</button>
       </form>
     </main>
@@ -168,18 +168,15 @@
       <div class="page-footer__section socials">
         <ul class="socials__list">
           <li class="socials__item">
-            <a class="socials__link">
-              <svg class="socials__icon"></svg>
+            <a class="socials__link" href="#">
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link">
-              <svg class="socials__icon"></svg>
+            <a class="socials__link" href="#">
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link">
-              <svg class="socials__icon"></svg>
+            <a class="socials__link" href="#">
             </a>
           </li>
         </ul>

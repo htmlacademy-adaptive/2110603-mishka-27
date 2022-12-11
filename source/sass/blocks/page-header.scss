@@ -1,0 +1,14 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 31px;
+
+  &__logo {
+    margin: auto;
+  }
+
+  &__main-nav {
+    margin: 0;
+  }
+}
