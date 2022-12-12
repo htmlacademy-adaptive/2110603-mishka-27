@@ -1,14 +1,39 @@
+@use "../global/variables.scss";
+
 .page-header {
+  width: 320px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 31px;
+  position: relative;
+}
 
-  &__logo {
+.page-header__logo {
     margin: auto;
   }
 
-  &__main-nav {
+.page-header__main-nav {
     margin: 0;
+  }
+
+@media (min-width: variables.$tablet-width) {
+  .page-header {
+    width: 780px;
+  }
+  .page-header__logo {
+    position: absolute;
+    left: 0;
+    top: 10px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .page-header {
+    width: 1150px;
+  }
+
+  .page-header__logo {
+    left: 50%;
   }
 }

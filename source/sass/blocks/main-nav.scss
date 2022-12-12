@@ -1,18 +1,51 @@
 @use "../global/mixins.scss";
+@use "../global/variables.scss";
 
 .main-nav {
   position: relative;
+}
 
-  //  Закрытое меню
 
-  .main-nav__wrapper {
-    @include mixins.closed-menu;
+.main-nav__wrapper {
+  display: none;
 
-  //  Открытое меню
+//  Открытое меню
 
-    &--active {
-      position: relative;
-      @include mixins.opened-menu;
-    }
+  &--active {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #ffffff;
+  }
+}
+
+//tablet
+
+@media (min-width: variables.$tablet-width) {
+  .main-nav__wrapper,
+  .main-nav__wrapper--active {
+    width: 768px;
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .main-nav__wrapper,
+  .main-nav__wrapper--active {
+    width: 1150px;
+    justify-content: space-between;
   }
 }

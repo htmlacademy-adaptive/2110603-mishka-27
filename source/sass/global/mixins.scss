@@ -6,18 +6,3 @@
   background-repeat: no-repeat;
   background-size: auto;
 }
-// Выпадающее меню
-
-@mixin opened-menu {
-  .menu-list {
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-  }
-}
-
-@mixin closed-menu {
-  .menu-list {
-    display: none;
-  }
-}

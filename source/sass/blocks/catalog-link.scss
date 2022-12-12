@@ -1,0 +1,21 @@
+.catalog-link {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:nth-child(odd) {
+    background-color: #63d1bb;
+    padding: 23px 36px 18px 30px;
+  }
+
+  &:nth-child(even) {
+    background-color: #56c3b2;
+    padding: 21px 27px 22px 30px;
+  }
+}
