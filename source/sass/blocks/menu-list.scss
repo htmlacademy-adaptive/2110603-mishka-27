@@ -29,12 +29,16 @@
   }
   .menu-list:first-child {
     position: absolute;
-    top: 40px;
-    left: 0;
+    top: 80px;
+    left: -28px;
   }
 
   .menu-list__item {
     padding: 0;
+  }
+
+  .menu-list__item:first-child .link-with-icon__text {
+    display: none;
   }
 }
 

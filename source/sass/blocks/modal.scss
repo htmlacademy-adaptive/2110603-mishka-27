@@ -1,36 +1,57 @@
+@use "../global/variables.scss";
+
 .modal {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
-  max-width: 320px;
+  width: 320px;
   padding: 28px 30px 46px;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   background-color: #ffffff;
+}
+
+.modal__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.modal__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.modal__button {
+  width: 260px;
+  background-color: #63d1bb;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .modal {
+    width: 566px;
+
 
   .modal__title {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 30px;
-    color: #000000;
+    font-size: 30px;
+    line-height: 57px;
   }
 
   .modal__text {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 30px;
-    color: #444444;
+    font-size: 17px;
   }
 
   .modal__button {
-    width: 260px;
-    background-color: #63d1bb;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
+    width: 350px;
   }
 }

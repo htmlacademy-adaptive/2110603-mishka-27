@@ -1,3 +1,5 @@
+@use "../global/variables.scss";
+
 .form-legend {
   font-weight: 700;
   font-size: 17px;
@@ -17,3 +19,17 @@
     left: 60px;
   }
 }
+
+@media (min-width: variables.$tablet-width) {
+  .form-legend {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+  }
+
+  .form-legend::after {
+    display: none;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {}

@@ -3,16 +3,17 @@
 
 .main-nav {
   position: relative;
+  width: 100%;
 }
 
 
 .main-nav__wrapper {
   display: none;
+  width:100%;
 
 //  Открытое меню
 
   &--active {
-    width: 320px;
     display: flex;
     flex-direction: column;
     z-index: 1;
@@ -28,7 +29,7 @@
 @media (min-width: variables.$tablet-width) {
   .main-nav__wrapper,
   .main-nav__wrapper--active {
-    width: 768px;
+    display: flex;
     background-color: transparent;
     position: relative;
     top: 0;
@@ -45,7 +46,6 @@
 @media (min-width: variables.$desktop-width) {
   .main-nav__wrapper,
   .main-nav__wrapper--active {
-    width: 1150px;
     justify-content: space-between;
   }
 }

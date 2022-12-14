@@ -1,16 +1,113 @@
+@use "../global/variables.scss";
+
 .promo-product {
   display: grid;
+}
+
+.promo-product__title {
+  margin-bottom: 41px;
+}
+
+.promo-product__description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+  padding-bottom: 28px;
+}
+
+.promo-product__features {
+  margin: 0;
+  padding: 0;
+}
+
+.promo-product__image {
+  padding-bottom: 25px;
+}
+
+.promo-product__price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #444444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.promo-product__button {
+  width: 260px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .promo-product {
+    grid-template-areas:
+      "title title"
+      "text image"
+      "features image"
+      "price image"
+      "button image";
+  }
 
   .promo-product__title {
     margin-bottom: 41px;
+    grid-area: title;
+
   }
 
   .promo-product__description {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
+    grid-area: text;
+    font-size: 17px;
+    line-height: 30px;
     color: #444444;
     padding-bottom: 28px;
+  }
+
+  .promo-product__features {
+    grid-area: features;
+    margin: 0;
+    padding: 0;
+  }
+
+  .promo-product__image {
+    grid-area: image;
+  }
+
+  .promo-product__price {
+    grid-area: price;
+    font-size: 20px;
+  }
+
+  .promo-product__button {
+    grid-area: button;
+    width: 292px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .promo-product {
+    padding-left: 175px;
+    grid-template-areas:
+      "title image"
+      "text image"
+      "features image"
+      "price image"
+      "button image";
+  }
+
+  .promo-product__title {
+    width: 545px;
+    position: absolute;
+    margin-bottom: 41px;
+    z-index: 1;
+  }
+
+  .promo-product__description {
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 92px;
+    padding-bottom: 60px;
   }
 
   .promo-product__features {
@@ -19,17 +116,22 @@
   }
 
   .promo-product__image {
+    grid-area: image;
+    width: 525px;
     padding-bottom: 25px;
   }
 
   .promo-product__price {
+    grid-area: price;
     font-weight: 700;
     font-size: 17px;
     line-height: 24px;
-    color: #444444;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 25px;
+    padding-top: 68px;
+    padding-bottom: 33px;
+  }
+
+  .promo-product__button {
+    grid-area: button;
+    width: 292px;
   }
 }

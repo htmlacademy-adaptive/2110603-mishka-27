@@ -1,9 +1,17 @@
+@use "../global/variables.scss";
+
 .link-with-icon {
     position: relative;
+}
 
-    .link-with-icon__icon {
-        position: absolute;
-        left: -20px;
-        top: 30px;
+.link-with-icon__icon {
+    position: absolute;
+    left: -20px;
+    top: 30px;
+}
+
+@media (min-width: variables.$tablet-width) {
+    .link-with-icon__text:first-child {
+      display: none;
     }
 }
