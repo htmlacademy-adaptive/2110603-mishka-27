@@ -13,9 +13,9 @@
 @use "blocks/menu-list.scss";
 @use "blocks/cart-link.scss";
 @use "blocks/link-with-icon.scss";
-@use "blocks/catalog-sections.scss";
-@use "blocks/catalog-list.scss";
-@use "blocks/catalog-link.scss";
+@use "blocks/index-catalog.scss";
+@use "blocks/index-catalog-list.scss";
+@use "blocks/index-catalog-link.scss";
 @use "blocks/promotion.scss";
 @use "blocks/title.scss";
 @use "blocks/promo-product.scss";
@@ -45,3 +45,5 @@
 @use "blocks/form-legend.scss";
 @use "blocks/user-info.scss";
 @use "blocks/customer-name.scss";
+@use "blocks/form-button.scss";
+@use "blocks/footer-logo.scss";

@@ -2,6 +2,7 @@
 
 .contacts {
   padding: 38px 0 39px;
+  margin: 0 auto;
 }
 
 .contacts__title {
@@ -57,12 +58,17 @@
   }
 }
 
+.contacts__map iframe {
+  width: 100%;
+}
+
 .contacts__button {
   width: 260px;
   margin: 40px auto;
 }
 @media (min-width: variables.$tablet-width) {
   .contacts {
+    max-width: 668px;
     padding: 46px 0 57px;
   }
 
@@ -95,6 +101,7 @@
 
 @media (min-width: variables.$desktop-width) {
   .contacts {
+    max-width: 1050px;
     padding: 71px 50px 105px 113px;
     display: grid;
     grid-template-areas:

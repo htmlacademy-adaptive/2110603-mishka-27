@@ -1,51 +1,60 @@
 @use "../global/mixins.scss";
 @use "../global/variables.scss";
 
+
 .main-nav {
-  position: relative;
-  width: 100%;
-}
-
-
-.main-nav__wrapper {
   display: none;
-  width:100%;
+
 
 //  Открытое меню
 
   &--active {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     z-index: 1;
-    position: absolute;
-    top: 40px;
-    right: 0;
     background-color: #ffffff;
   }
+}
+
+.main-nav__note {
+  display: none;
 }
 
 //tablet
 
 @media (min-width: variables.$tablet-width) {
-  .main-nav__wrapper,
-  .main-nav__wrapper--active {
-    display: flex;
-    background-color: transparent;
+  .main-nav,
+  .main-nav--active {
     position: relative;
-    top: 0;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: flex;
     justify-content: flex-end;
+    background-color: transparent;
+    flex-wrap: wrap;
   }
 
-  .main-nav__toggle {
-    display: none;
+  .main-nav__note {
+    display: block;
+    position: absolute;
+    bottom: -52px;
+    right: 22px;
   }
+
+  .main-nav__text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+  }
+
 }
 
 @media (min-width: variables.$desktop-width) {
-  .main-nav__wrapper,
-  .main-nav__wrapper--active {
+  .main-nav,
+  .main-nav--active {
+    flex-direction: row;
     justify-content: space-between;
   }
 }

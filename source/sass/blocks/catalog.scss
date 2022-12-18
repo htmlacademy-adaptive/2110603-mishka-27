@@ -20,12 +20,14 @@
 @media (min-width: variables.$tablet-width) {
   .catalog {
     padding: 67px 50px 53px;
+    max-width: 668px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .catalog {
     padding: 111px 50px 57px;
+    max-width: 1050px;
   }
 
   .catalog__list {

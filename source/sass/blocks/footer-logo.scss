@@ -1,0 +1,11 @@
+@use "../global/variables.scss";
+
+.footer-logo {
+  display: none;
+}
+
+@media (min-width: variables.$tablet-width) {
+   .footer-logo {
+    display: block;
+   }
+}

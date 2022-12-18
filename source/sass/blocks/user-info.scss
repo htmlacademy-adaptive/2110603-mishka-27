@@ -1,9 +1,5 @@
 @use "../global/variables.scss";
 
-.user-info {
-  border: none;
-}
-
 .user-info__list {
   list-style-type: none;
   padding: 0;
@@ -20,6 +16,7 @@
   line-height: 18px;
   border: none;
   border-bottom: 2px solid #000000;
+  background-color: transparent;
 }
 
 .user-info__textarea {
@@ -35,26 +32,9 @@
   color: #000000;
 }
 
-.user-info__note {
-  font-size: 14px;
-  line-height: 16px;
-  color: #444444;
-  margin-bottom: 30px;
-}
-
 @media (min-width: variables.$tablet-width) {
-  .user-info {
-    position: relative;
-    padding-left: 219px;
-  }
   .user-info__input {
     width: 501px;
-  }
-
-  .user-info__note {
-    position: absolute;
-    bottom: -90px;
-    right: 0;
   }
 
   .user-info__textarea {
@@ -63,7 +43,6 @@
 }
 
 @media (min-width: variables.$desktop-width) {
-
   .user-info__input {
     width: 700px;
   }

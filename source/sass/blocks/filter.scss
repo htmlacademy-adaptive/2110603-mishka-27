@@ -1,9 +1,5 @@
 @use "../global/variables.scss";
 
-.filter {
-  border: none;
-}
-
 .filter__list {
   padding: 0;
   margin: 0;
@@ -11,26 +7,3 @@
   display: grid;
   gap: 23px;
 }
-
-.filter__title {
-
-}
-
-
-@media (min-width: variables.$tablet-width) {
-  .filter {
-    position: relative;
-    padding-left: 219px;
-  }
-
-  .filter__list {
-
-  }
-
-  .filter__title {
-
-  }
-
-}
-
-@media (min-width: variables.$desktop-width) {}

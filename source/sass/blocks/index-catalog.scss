@@ -1,0 +1,19 @@
+@use "../global/variables.scss";
+
+.index-catalog {
+  position: relative;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .index-catalog {
+    margin: 0 auto;
+    padding: 0 50px;
+    max-width: 668px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .index-catalog {
+  max-width: 1050px;
+  }
+}

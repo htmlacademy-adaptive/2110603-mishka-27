@@ -1,0 +1,20 @@
+@use "../global/variables.scss";
+
+.form-button__note {
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+  margin-bottom: 30px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .form-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form-button__note {
+    order: 2;
+  }
+}

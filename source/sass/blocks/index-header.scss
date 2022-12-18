@@ -22,6 +22,10 @@
     height: 625px;
     background-image: url("../../img/header-background-image-tablet.jpg");
   }
+
+  .index-header__title {
+    width: 100%;
+  }
 }
 
 @media (min-width: variables.$desktop-width) {

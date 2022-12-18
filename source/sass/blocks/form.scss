@@ -1,7 +1,7 @@
 @use "../global/variables.scss";
 
 .form {
-  padding: 17px 30px 55px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -9,60 +9,76 @@
 
 .form__description {
   display: block;
-  padding: 0;
-  margin: 0;
-  padding-bottom: 37px;
+  margin: 0 auto;
+  padding: 17px 30px 37px;
+  width: 320px;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
 }
 
-.form__field {
-  padding: 0;
-  margin: 0;
-  padding-bottom: 30px;
+.form__wrapper {
+  width: 100%;
+
 }
 
-.form__button {
+.form__field {
+  border: none;
+  padding: 0 30px 30px;
+  margin: 0 auto;
   width: 260px;
 }
 
-@media (min-width: variables.$tablet-width) {
-  .form {
-    padding: 54px 0 50px;
-  }
+.form__button {
+  margin: 0 auto;
+  margin-bottom: 55px;
+}
 
+@media (min-width: variables.$tablet-width) {
   .form__description {
-    padding-left: 50px;
+    padding: 54px 50px 0;
     width: 668px;
     font-size: 17px;
     line-height: 30px;
   }
 
   .form__field {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px;
+    width: 501px;
+    position: relative;
+    padding-left: 219px;
   }
 
-  .form__field:nth-of-type(2) .filter__list {
+  .form__wrapper:nth-of-type(2) .filter__list {
     display: grid;
-    grid-template-columns: 210px 210px;
+    grid-template-columns: 200px 200px;
     row-gap: 24px;
-    column-gap: 53px;
+    column-gap: 50px;
   }
 
-  .form__field:nth-of-type(even):not(:last-of-type),
-  .form__field:nth-of-type(5) {
+  .form__wrapper--grey {
     background-color: #f1f1f1;
-    width: 100%;
-    .user-info__input {
-      background-color: #f1f1f1;
-    }
+  }
+
+  .form__button {
+    width: 668px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
-  .form {
+  .form__description {
     padding-top: 98px;
+  }
+
+  .form__field {
+    width: 700px;
+  }
+
+  .form__wrapper:nth-of-type(2) .filter__list {
+    grid-template-columns: 200px 200px 200px;
+  }
+
+  .form__button {
+    width: 700px;
   }
 }

@@ -2,7 +2,7 @@
 
 .product {
   display: grid;
-  width: 260px;
+  width: 100%;
 }
 
 .product__image {
@@ -41,7 +41,6 @@
 
 @media (min-width: variables.$tablet-width) {
   .product {
-    width: 667px;
     grid-template-columns: 334px 335px;
     column-gap: 0;
 

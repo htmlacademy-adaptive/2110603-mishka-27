@@ -4,6 +4,7 @@
 .review-slider {
   @include mixins.bottom-zigzag;
   padding: 0 30px 51px;
+  margin: 0 auto;
 }
 
 .review-slider__title {
@@ -18,6 +19,7 @@
 
 @media (min-width: variables.$tablet-width) {
   .review-slider {
+    max-width: 668px;
     position: relative;
     padding: 0 50px 132px;
   }
@@ -40,6 +42,7 @@
 
 @media (min-width: variables.$desktop-width) {
   .review-slider {
+    max-width: 1050px;
     padding: 0 50px 90px;
   }
 

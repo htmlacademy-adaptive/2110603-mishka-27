@@ -3,6 +3,10 @@
 .page-footer {
   position: relative;
   background-color: #f1f1f1;
+}
+
+.page-footer__wrapper {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 
@@ -18,9 +22,12 @@
 }
 
 @media (min-width: variables.$tablet-width) {
-  .page-footer {
+  .page-footer__wrapper {
+    max-width: 668px;
     padding: 0 50px;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
     &::before {
       display: none;
@@ -29,4 +36,7 @@
 }
 
 @media (min-width: variables.$desktop-width) {
+  .page-footer__wrapper {
+    max-width: 1050px;
+  }
 }

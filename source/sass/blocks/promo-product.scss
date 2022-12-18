@@ -4,8 +4,18 @@
   display: grid;
 }
 
-.promo-product__title {
-  margin-bottom: 41px;
+.promo-product__wrapper {
+  padding-bottom: 17px;
+}
+
+.promo-product__caption {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  color: #63d1bb;
+  text-transform: uppercase;
 }
 
 .promo-product__description {
@@ -50,10 +60,16 @@
       "button image";
   }
 
-  .promo-product__title {
-    margin-bottom: 41px;
+  .promo-product__wrapper {
+    padding-bottom: 37px;
     grid-area: title;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  .promo-product__caption {
+    width: 100px;
   }
 
   .promo-product__description {
@@ -87,7 +103,7 @@
 
 @media (min-width: variables.$desktop-width) {
   .promo-product {
-    padding-left: 175px;
+    position: relative;
     grid-template-areas:
       "title image"
       "text image"
@@ -96,23 +112,28 @@
       "button image";
   }
 
-  .promo-product__title {
-    width: 545px;
-    position: absolute;
-    margin-bottom: 41px;
+  .promo-product__wrapper {
+    width: 688px;
+    grid-area: title;
     z-index: 1;
+    position: absolute;
+    left: 20px;
+  }
+
+  .promo-product__title {
+    order: 2;
   }
 
   .promo-product__description {
     font-size: 17px;
     line-height: 30px;
+    padding-left: 175px;
     padding-top: 92px;
     padding-bottom: 60px;
   }
 
   .promo-product__features {
-    margin: 0;
-    padding: 0;
+    padding-left: 175px;
   }
 
   .promo-product__image {
@@ -131,6 +152,7 @@
   }
 
   .promo-product__button {
+    margin-left: 175px;
     grid-area: button;
     width: 292px;
   }
