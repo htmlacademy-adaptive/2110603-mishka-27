@@ -22,7 +22,7 @@
 // Text:hover :active
 
 @mixin text-hover-down {
-  &:hover:not(.link-with-icon) {
+  &:hover {
     opacity: 0.6;
   }
 
@@ -76,16 +76,6 @@
   //$email-color: opacify(#46C1AE, 0.1);
 
   &:active::after {
-    background-color:  rgba(98, 209, 186, 0.1);
-  }
-}
-
-@mixin product-hover-down {
-  &:hover::after {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  &:active::after {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(98, 209, 186, 0.1);
   }
 }
