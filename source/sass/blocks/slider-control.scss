@@ -1,3 +1,5 @@
+@use "../global/mixins.scss";
+
 .slider-control {
   display: flex;
   justify-content: space-between;
@@ -7,5 +9,8 @@
     padding: 0 10px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
+
+    @include mixins.text-hover-down;
   }
 }

@@ -1,9 +1,12 @@
+@use "../global/mixins.scss";
 @use "../global/variables.scss";
 
 .link-with-icon {
   margin: 0;
   display: flex;
   flex: none;
+
+  @include mixins.icon-hover-down;
 }
 
 .link-with-icon__icon {
