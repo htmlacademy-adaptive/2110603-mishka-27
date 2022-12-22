@@ -2,11 +2,10 @@
 @use "../global/variables.scss";
 
 .link-with-icon {
+  @include mixins.icon-hover-down;
   margin: 0;
   display: flex;
   flex: none;
-
-  @include mixins.icon-hover-down;
 }
 
 .link-with-icon__icon {
@@ -14,3 +13,8 @@
     margin-right: 25px;
 }
 
+@media (min-width: variables.$tablet-width) {
+  .link-with-icon--no-text .link-with-icon__text {
+    display: none;
+  }
+}

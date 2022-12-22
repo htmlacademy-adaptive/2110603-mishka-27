@@ -3,50 +3,37 @@
 
 .review-slider {
   @include mixins.bottom-zigzag;
-  padding: 0 30px 51px;
-  margin: 0 auto;
 }
 
 .review-slider__title {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 14px;
+  display: block;
+  padding: 0 30px 14px;
+  margin: 0 auto;
+  width: 320px;
+  box-sizing: border-box;
 }
 
-.review-slider__control {
-  margin: 30px 0 38px;
-}
 
 @media (min-width: variables.$tablet-width) {
   .review-slider {
-    max-width: 668px;
-    position: relative;
-    padding: 0 50px 132px;
+    padding-bottom: 132px;
   }
 
-  .review-slider__control {
-    margin: 0;
-    position: absolute;
-    right: 50px;
-    bottom: 132px;
-  }
-
-  .review-slider__add-link {
-    width: 175px;
-    box-sizing: border-box;
-    position: absolute;
-    right: 50px;
-    top: 0;
+  .review-slider__title {
+    width: 768px;
+    padding-left: 50px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .review-slider {
-    max-width: 1050px;
-    padding: 0 50px 90px;
+    padding: 0 50px 163px;
+    width: 1150px;
+    margin: 0 auto;
   }
 
   .review-slider__title {
+    width: 1150px;
     padding-left: 174px;
   }
 }

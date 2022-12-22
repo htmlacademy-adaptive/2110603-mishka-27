@@ -3,7 +3,7 @@
 @mixin bottom-zigzag {
   background-image: url("../img/zigzag-line.svg");
   background-position: bottom 0 left 0;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-size: auto;
 }
 
@@ -52,7 +52,7 @@
   }
 }
 
-//button:hover :active 
+//button:hover :active
 
 @mixin button-hover-down {
   &:hover {
@@ -79,3 +79,4 @@
     background-color: rgba(98, 209, 186, 0.1);
   }
 }
+

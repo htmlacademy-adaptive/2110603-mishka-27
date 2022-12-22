@@ -14,6 +14,7 @@
 }
 
 .menu-list__link {
+  @include mixins.text-hover-down;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -23,8 +24,6 @@
   padding: 28px;
   margin-left: 48px;
   cursor: pointer;
-
-  @include mixins.text-hover-down;
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -34,7 +33,7 @@
     &--catalog {
       justify-content: flex-start;
       position: absolute;
-      top: 80px;
+      top: 100%;
       left: 0;
 
       .menu-list__link {
@@ -46,10 +45,6 @@
     &--user {
       order: -1;
       justify-content: flex-end;
-
-      .menu-list__item:first-child .link-with-icon__text {
-        display: none;
-      }
     }
 
   }

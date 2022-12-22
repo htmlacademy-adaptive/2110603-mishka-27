@@ -1,9 +1,8 @@
 @use "../global/mixins.scss";
 @use "../global/variables.scss";
 .logo {
-  width: 86px;
-
   @include mixins.logo-hover-down;
+  width: 86px;
 }
 
 .logo__image {

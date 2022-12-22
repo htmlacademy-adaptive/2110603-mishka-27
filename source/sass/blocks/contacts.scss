@@ -3,22 +3,29 @@
 
 .contacts {
   padding: 38px 0 39px;
-  margin: 0 auto;
 }
 
 .contacts__title {
+  display: block;
+  margin: 0 auto;
   padding: 0 30px 28px;
+  width: 320px;
+  box-sizing: border-box;
 }
 
 .contacts__wrapper {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 320px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
 .contacts__inner {
-  max-width: 320px;
-  padding: 0 30px 36px;
+  width: 100%;
+  padding-bottom: 36px;
   display: flex;
   justify-content: flex-start;
 }
@@ -44,6 +51,8 @@
 }
 
 .contacts__link {
+  @include mixins.email-hover-down;
+
   color: #444444;
   text-decoration: none;
   position: relative;
@@ -57,10 +66,10 @@
     height: 1px;
     background-color: #62d1ba;
   }
-  
-  @include mixins.email-hover-down;
 }
-
+.contacts__map {
+  height: 454px;
+}
 .contacts__map iframe {
   width: 100%;
 }
@@ -69,17 +78,19 @@
   width: 260px;
   margin: 40px auto;
 }
+
 @media (min-width: variables.$tablet-width) {
   .contacts {
-    max-width: 668px;
     padding: 46px 0 57px;
   }
 
   .contacts__title {
+    width: 768px;
     padding: 22px 50px 49px;
   }
 
   .contacts__wrapper {
+    width: 768px;
     padding: 0 50px 49px;
     flex-direction: row;
   }
@@ -97,6 +108,10 @@
     width: 82px;
   }
 
+  .contacts__map {
+    height: 457px;
+  }
+
   .contacts__button {
     width: 240px;
   }
@@ -104,9 +119,11 @@
 
 @media (min-width: variables.$desktop-width) {
   .contacts {
-    max-width: 1050px;
-    padding: 71px 50px 105px 113px;
+    padding: 71px 50px 105px;
+    width: 1050px;
+    margin: 0 auto;
     display: grid;
+    grid-template-columns: calc(1050px - 527px) 527px;
     grid-template-areas:
       "title map"
       "text map"
@@ -114,17 +131,19 @@
   }
 
   .contacts__title {
+    width: 523px;
+    padding: 79px 59px 34px 170px;
     grid-area: title;
-    padding-top: px;
   }
 
   .contacts__map {
     grid-area: map;
-    width: 527px;
-    height: 457px;
   }
 
   .contacts__wrapper {
+    width: 523px;
+    padding-left: 170px;
+    padding-bottom: 0;
     grid-area: text;
     flex-direction: column;
   }
@@ -132,5 +151,6 @@
   .contacts__button {
     grid-area: button;
     width: 230px;
+    margin-left: 170px;
   }
 }

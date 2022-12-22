@@ -1,11 +1,14 @@
 @use "../global/variables.scss";
 
 .advantages {
+  margin: 0 auto;
   padding: 31px 30px 58px;
+  width: 320px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 auto;
+
 }
 
 .advantages__title {
@@ -29,7 +32,7 @@
 
 @media (min-width: variables.$tablet-width) {
   .advantages {
-    max-width: 668px;
+    width: 768px;
     padding: 82px 50px 132px;
   }
 
@@ -51,7 +54,7 @@
 
 @media (min-width: variables.$desktop-width) {
   .advantages {
-    max-width: 1050px;
+    width: 1150px;
     padding: 68px 50px 89px 225px;
   }
 }

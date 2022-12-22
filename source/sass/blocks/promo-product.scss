@@ -2,6 +2,10 @@
 
 .promo-product {
   display: grid;
+  width: 320px;
+  box-sizing: border-box;
+  padding: 31px 30px 42px;
+  margin: 0 auto;
 }
 
 .promo-product__wrapper {
@@ -52,6 +56,8 @@
 
 @media (min-width: variables.$tablet-width) {
   .promo-product {
+    padding: 40px 50px 69px;
+    width: 768px;
     grid-template-areas:
       "title title"
       "text image"
@@ -103,6 +109,8 @@
 
 @media (min-width: variables.$desktop-width) {
   .promo-product {
+    padding: 54px 50px 96px;
+    width: 1150px;
     position: relative;
     grid-template-areas:
       "title image"

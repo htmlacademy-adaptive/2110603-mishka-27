@@ -12,6 +12,7 @@
   margin: 0 auto;
   padding: 17px 30px 37px;
   width: 320px;
+  box-sizing: border-box;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
@@ -47,13 +48,6 @@
     width: 501px;
     position: relative;
     padding-left: 219px;
-  }
-
-  .form__wrapper:nth-of-type(2) .filter__list {
-    display: grid;
-    grid-template-columns: 200px 200px;
-    row-gap: 24px;
-    column-gap: 50px;
   }
 
   .form__wrapper--grey {

@@ -4,8 +4,20 @@
   display: none;
 }
 
+.footer-logo__logo {
+  padding: 10px;
+
+  &:hover .footer-logo__image path {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: variables.$tablet-width) {
-   .footer-logo {
-    display: block;
-   }
+  .footer-logo {
+   display: block;
+  }
 }

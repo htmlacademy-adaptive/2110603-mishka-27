@@ -7,3 +7,19 @@
   display: grid;
   gap: 23px;
 }
+
+@media (min-width: variables.$tablet-width) {
+  .filter__list--grid {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    row-gap: 24px;
+    column-gap: 50px;
+  }
+}
+
+
+@media (min-width: variables.$desktop-width) {
+  .filter__list--grid {
+    grid-template-columns: 200px 200px 200px;
+  }
+}

@@ -1,9 +1,12 @@
 @use "../global/mixins.scss";
 
 .button {
+  @include mixins.button-hover-down;
+  
   display: block;
   padding: 16px;
   width: 260px;
+  box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -15,6 +18,4 @@
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-
-  @include mixins.button-hover-down;
 }

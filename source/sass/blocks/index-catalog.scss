@@ -1,19 +1,113 @@
 @use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .index-catalog {
   position: relative;
 }
 
+.index-catalog__list {
+  list-style-type: none;
+  display: grid;
+  margin: 0;
+  padding: 0;
+}
+
+.index-catalog__link {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover .index-catalog__icon path {
+    opacity: 0.7;
+  }
+
+  &:active .index-catalog__icon path {
+    opacity: 0.3;
+  }
+}
+$pb-odd: 18px;
+$pb-even: 22px;
+
+.index-catalog__link--odd {
+  background-color: #63d1bb;
+  padding: 23px 36px $pb-odd 30px;
+}
+
+.index-catalog__link--even {
+  background-color: #56c3b2;
+  padding: 21px 27px $pb-even 30px;
+}
+
+.index-catalog__link--odd:hover {
+  background-color: #59d5bc;
+  padding-bottom: calc($pb-odd + 5px);
+  margin-top: -5px;
+}
+.index-catalog__link--even:hover {
+  background-color: #46c1ae;
+  padding-bottom: calc($pb-even + 5px);
+  margin-top: -5px;
+}
+
 @media (min-width: variables.$tablet-width) {
+  $pb-odd: 48px;
+  $pb-even: 46px;
+
   .index-catalog {
     margin: 0 auto;
     padding: 0 50px;
     max-width: 668px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/zigzag-fill-tablet.svg");
+      background-repeat: repeat-x;
+      background-position: left 0 bottom 0;
+      background-size: auto 24px;
+      z-index: 1;
+    }
+  }
+
+  .index-catalog__list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .index-catalog__link--odd {
+    padding: 25px 36px $pb-odd;
+  }
+
+  .index-catalog__link--even {
+    padding: 25px 33px $pb-even 36px;
+  }
+
+  .index-catalog__link--odd:hover {
+    background-color: #59d5bc;
+    padding-bottom: calc($pb-odd + 5px);
+    margin-top: -5px;
+  }
+
+  .index-catalog__link--even:hover {
+    background-color: #46c1ae;
+    padding-bottom: calc($pb-even + 5px);
+    margin-top: -5px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .index-catalog {
   max-width: 1050px;
+  background-size: auto 34px;
   }
 }

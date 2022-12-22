@@ -2,6 +2,7 @@
 
 .catalog {
   margin: 0 auto;
+  width: 260px;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -11,27 +12,41 @@
 .catalog__list {
   padding: 0;
   margin: 0;
+  width: 100%;
   list-style-type: none;
   display: grid;
   gap: 30px;
 }
 
+.catalog__item {
+  width: 260px;
+}
 
 @media (min-width: variables.$tablet-width) {
   .catalog {
     padding: 67px 50px 53px;
-    max-width: 668px;
+    width: 668px;
   }
+
+  .catalog__list {
+    gap: 54px;
+  }
+
+  .catalog__item {
+    width: 668px;
 }
 
 @media (min-width: variables.$desktop-width) {
   .catalog {
     padding: 111px 50px 57px;
-    max-width: 1050px;
+    width: 1050px;
   }
 
   .catalog__list {
     grid-template-columns: repeat(3, 316px);
     gap: 51px;
   }
+
+  .catalog__item {
+    width: 316px;
 }

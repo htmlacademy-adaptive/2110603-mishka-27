@@ -3,23 +3,5 @@
 
 .promotion {
   @include mixins.bottom-zigzag;
-  padding: 31px 30px 42px;
   position: relative;
-  margin: 0 auto;
-}
-
-@media (min-width: variables.$tablet-width) {
-  .promotion {
-    padding: 40px 50px 69px;
-    max-width: 668px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: variables.$desktop-width) {
-  .promotion {
-    padding: 54px 50px 96px;
-    max-width: 1050px;
-
-  }
 }
