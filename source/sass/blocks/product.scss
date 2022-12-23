@@ -1,5 +1,4 @@
 @use "../global/variables.scss";
-@use "../global/mixins.scss";
 
 .product {
   display: grid;
@@ -22,40 +21,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-
-.product__border {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   border: 1px solid #ececec;
-  box-sizing: border-box;
 }
 
 .product__link {
   text-decoration: none;
   cursor: pointer;
 
-  &--text {
-    position: relative;
-    z-index: 1;
-  }
-
-  &--image:hover + .product__description,
-  &:hover .product__border {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  }
-
   &--text:hover {
     opacity: 0.6;
-  }
-
-  &--image:active + .product__description,
-  &:active .product__border {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 
   &--text:active {
@@ -65,7 +39,6 @@
 
 .product__title {
   padding-top: 24px;
-  z-index: 1;
 }
 
 .product__text {
@@ -106,7 +79,6 @@
 .product__button {
   padding-top: 23px;
   padding-bottom: 31px;
-  z-index: 1;
 }
 
 .product__price {
@@ -115,13 +87,20 @@
   font-size: 15px;
   line-height: 24px;
   color: #000000;
+} 
+
+.product:hover .product__description {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product:active .product__description {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: variables.$tablet-width) {
   .product {
     grid-template-columns: 334px 334px;
     column-gap: 0;
-
   }
 
   .product__description {

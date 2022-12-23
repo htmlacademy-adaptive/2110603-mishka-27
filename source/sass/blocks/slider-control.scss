@@ -8,11 +8,10 @@
 
 
   .slider-control__button {
+    @include mixins.text-hover-down;
     padding: 0 10px;
     background-color: transparent;
     border: none;
     cursor: pointer;
-
-    @include mixins.text-hover-down;
   }
 }
