@@ -2,7 +2,6 @@
 
 .card-button {
   @include mixins.icon-hover-down;
-  
   background-color: transparent;
   border: none;
   cursor: pointer;

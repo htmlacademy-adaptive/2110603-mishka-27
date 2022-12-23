@@ -2,7 +2,6 @@
 
 .button {
   @include mixins.button-hover-down;
-  
   display: block;
   padding: 16px;
   width: 260px;
