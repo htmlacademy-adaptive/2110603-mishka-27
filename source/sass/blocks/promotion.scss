@@ -1,24 +1,7 @@
 @use "../global/mixins.scss";
+@use "../global/variables.scss";
 
 .promotion {
   @include mixins.bottom-zigzag;
-  padding: 31px 30px 42px;
   position: relative;
-
-  .promotion__title {
-    margin: 0;
-    padding: 0;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 20px;
-    color: #63d1bb;
-    text-transform: uppercase;
-    position: absolute;
-    top: 65px;
-  }
-
-  .promotion__product {
-    margin: 0;
-  }
 }
-

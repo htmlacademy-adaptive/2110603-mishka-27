@@ -1,14 +1,60 @@
-.page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 22px 31px;
+@use "../global/variables.scss";
 
-  &__logo {
-    margin: auto;
+.page-header {
+  position: relative;
+}
+
+.page-header__top {
+  padding: 22px 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+}
+.page-header__logo {
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: 22px;
+  right: 30px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .page-header {
+    max-width: 768px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 30px;
   }
 
-  &__main-nav {
-    margin: 0;
+  .page-header__top {
+    padding: 0;
+    position: absolute;
+    z-index: 2;
+    top: 22px;
+    left: 50px;
+
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .page-header {
+    max-width: 1150px;
+    padding: 0 22px;
+    margin: 0 auto;
+  }
+
+  .page-header__top {
+    left: 50%;
+    transform: translateX(-75px);
+    width: 150px;
   }
 }

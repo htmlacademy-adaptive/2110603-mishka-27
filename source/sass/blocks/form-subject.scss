@@ -1,6 +1,14 @@
+@use "../global/variables.scss";
+
 .form-subject {
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   color: #000000;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .form-subject {
+    font-size: 19px;
+  }
 }

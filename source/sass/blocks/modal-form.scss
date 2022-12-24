@@ -1,28 +1,38 @@
+@use "../global/variables.scss";
+
 .modal-form {
   padding-top: 21px;
   display: grid;
   grid-template-columns: repeat(3, 82px);
   column-gap: 7px;
   row-gap: 31px;
+}
 
-  .modal-form__input {
-    cursor: pointer;
-  }
+.modal-form__input {
+  cursor: pointer;
+}
 
-  .modal-form__name {
-    display: block;
-    margin: 0 auto;
-    padding: 18px 22px;
-    border: 2px solid rgba(68, 68, 68, 0.1);
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 16px;
-    color: #444444;
-    text-align: center;
-  }
+.modal-form__name {
+  display: block;
+  margin: 0 auto;
+  padding: 18px 22px;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #444444;
+  text-align: center;
+}
 
-  .modal-form__input:checked + .modal-form__name {
-    border-color: #63d1bb;
+.modal-form__input:checked + .modal-form__name {
+  border-color: #63d1bb;
+}
+
+
+
+@media (min-width: variables.$tablet-width) {
+  .modal-form {
+    grid-template-columns: repeat(3, 112px);
   }
 }

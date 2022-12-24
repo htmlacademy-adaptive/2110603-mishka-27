@@ -1,39 +1,131 @@
+@use "../global/variables.scss";
+
 .video {
-  margin: 0 auto;
-  padding-top: 21px;
+  margin: 0 auto 58px;
   padding-bottom: 33px;
   border: 1px solid #ececec;
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+}
 
-  .video__title {
-    margin: 0 13px 26px 91px;
+.video__title {
+  display: block;
+  margin: 0 13px 26px 91px;
+}
+
+.video__icon {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50px, -38px);
+}
+
+.video__container {
+  position: relative;
+  cursor: pointer;
+
+  &:hover .video__icon {
+    width: 121px;
+    height: auto;
   }
 
-  .video__container {
-    position: relative;
+  &:active .video__icon {
+    width: 81px;
+    opacity: 30%;
+    transform: translate(-30%, -50%);
+  }
+}
+
+.video__poster {
+  display: block;
+  margin: 0 auto;
+}
+
+.video__text {
+  display: block;
+  margin: 0;
+  padding: 35px 0 41px 34px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.video__cart-link {
+  width: 192px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+}
+
+@media (min-width: variables.$tablet-width) {
+  .video {
+    margin: 0 auto 64px;
+    width: 668px;
   }
 
   .video__poster {
-    display: block;
-    margin: 0 auto;
+    width: 100%;
   }
 
-  .video__icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50px, -38px);
+  .video__title {
+    order: 1;
+    margin: 0;
+    padding-top: 41px;
+    padding-left: 107px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .video__text {
-    display: block;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 24px;
-    color: #444444;
+    order: 2;
+    padding: 24px 0 41px 40px;
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .video__cart-link {
-    width: 192px;
-    margin: 0 auto;
+    order: 3;
+    width: 584px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .video {
+    margin: 0 auto 105px;
+    padding: 0;
+    width: 1050px;
+    display: grid;
+    column-gap: 79px;
+    grid-template-areas:
+      "video title"
+      "video text"
+      "video button";
+  }
+
+  .video__container {
+    grid-area: video;
+    width: 683px;
+  }
+
+  .video__title {
+    grid-area: title;
+    padding-top: 96px;
+    padding-left: 0;
+  }
+
+  .video__text {
+    grid-area: text;
+    padding: 27px 36px 51px 0;
+  }
+
+  .video__cart-link {
+    grid-area: button;
+    width: 230px;
+    margin-bottom: 60px;
+    margin-left: 0;
   }
 }

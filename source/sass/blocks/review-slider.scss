@@ -1,16 +1,39 @@
 @use "../global/mixins.scss";
+@use "../global/variables.scss";
 
 .review-slider {
   @include mixins.bottom-zigzag;
-  padding: 45px 30px;
+}
 
-  .review-slider__title {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 14px;
+.review-slider__title {
+  display: block;
+  padding: 0 30px 14px;
+  margin: 0 auto;
+  width: 320px;
+  box-sizing: border-box;
+}
+
+
+@media (min-width: variables.$tablet-width) {
+  .review-slider {
+    padding-bottom: 132px;
   }
 
-  .review-slider__control {
-    margin: 30px 0 38px;
+  .review-slider__title {
+    width: 768px;
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .review-slider {
+    padding: 0 50px 163px;
+    width: 1150px;
+    margin: 0 auto;
+  }
+
+  .review-slider__title {
+    width: 1150px;
+    padding-left: 174px;
   }
 }

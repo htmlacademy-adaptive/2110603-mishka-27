@@ -1,9 +1,20 @@
-.link-with-icon {
-    position: relative;
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
 
-    .link-with-icon__icon {
-        position: absolute;
-        left: -20px;
-        top: 30px;
-    }
+.link-with-icon {
+  @include mixins.icon-hover-down;
+  margin: 0;
+  display: flex;
+  flex: none;
+}
+
+.link-with-icon__icon {
+    width: 21px;
+    margin-right: 25px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .link-with-icon--no-text .link-with-icon__text {
+    display: none;
+  }
 }

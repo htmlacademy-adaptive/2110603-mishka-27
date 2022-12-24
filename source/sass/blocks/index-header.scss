@@ -1,13 +1,36 @@
+@use "../global/variables.scss";
+
 .index-header {
-  padding: 73px 0 113px;
+  width: 100%;
+  height: 281px;
   background-image: url("../img/header-background-image.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  &__title {
-    width: 260px;
-    text-align: center;
+.index-header__title {
+  width: 260px;
+  text-align: center;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .index-header {
+    height: 625px;
+    background-image: url("../../img/header-background-image-tablet.jpg");
+  }
+
+  .index-header__title {
+    width: 100%;
   }
 }
 
+@media (min-width: variables.$desktop-width) {
+  .index-header {
+    height: 631px;
+    background-image: url("../../img/header-background-image-tablet.jpg");
+  }
+}

@@ -1,7 +1,10 @@
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
 .logo {
-  padding: 5px;
+  @include mixins.logo-hover-down;
+  width: 86px;
+}
 
-  &__image {
-    width: 100%;
-  }
+.logo__image {
+  width: 100%;
 }

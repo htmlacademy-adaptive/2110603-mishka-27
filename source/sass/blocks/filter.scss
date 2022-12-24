@@ -1,14 +1,24 @@
-.filter {
-  border: none;
+@use "../global/variables.scss";
+
+.filter__list {
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  list-style-type: none;
+  display: grid;
+  gap: 23px;
+}
 
-  .filter__list {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+@media (min-width: variables.$tablet-width) {
+  .filter__list--grid {
     display: grid;
-    gap: 23px;
+    grid-template-columns: 200px 200px;
+    row-gap: 24px;
+    column-gap: 50px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .filter__list--grid {
+    grid-template-columns: 200px 200px 200px;
   }
 }

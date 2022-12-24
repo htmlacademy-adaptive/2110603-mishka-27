@@ -1,4 +1,8 @@
+@use "../global/mixins.scss";
+
 .card-button {
-    background-color: transparent;
-    border: none;
+  @include mixins.icon-hover-down;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

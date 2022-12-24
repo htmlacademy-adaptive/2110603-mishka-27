@@ -1,3 +1,5 @@
+@use "../global/variables.scss";
+
 .features {
   font-weight: 400;
   font-size: 15px;
@@ -5,8 +7,8 @@
   color: #444444;
   padding-bottom: 41px;
   text-align: left;
+}
 
-  .features__item {
-    font-weight: 400;
-  }
+.features__item {
+  font-weight: 400;
 }

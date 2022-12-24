@@ -3,21 +3,79 @@
 @mixin bottom-zigzag {
   background-image: url("../img/zigzag-line.svg");
   background-position: bottom 0 left 0;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-size: auto;
 }
-// Выпадающее меню
 
-@mixin opened-menu {
-  .menu-list {
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
+//logo:hover :active
+
+@mixin logo-hover-down {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
-@mixin closed-menu {
-  .menu-list {
-    display: none;
+// Text:hover :active
+
+@mixin text-hover-down {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+//link-with-icon:hover :active
+
+@mixin icon-hover-down {
+  &:hover &__text {
+    opacity: 0.6;
+  }
+
+  &:hover &__icon path {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active &__text {
+    opacity: 0.3;
+  }
+
+  &:active &__icon path {
+    opacity: 0.3;
+  }
+}
+
+//button:hover :active
+
+@mixin button-hover-down {
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #444444;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+// email:hover :active
+
+@mixin email-hover-down {
+  &:hover .contacts__text {
+    color: #46c1ae;
+  }
+
+  //$email-color: opacify(#46C1AE, 0.1);
+
+  &:active::after {
+    background-color: rgba(98, 209, 186, 0.1);
   }
 }

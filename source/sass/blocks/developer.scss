@@ -1,17 +1,25 @@
 .developer {
   display: flex;
   justify-content: space-between;
-  padding: 12px 59px;
   align-items: center;
+  width: 196px;
+}
 
-  .developer__text {
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 18px;
-    color: #000000;
+.developer__text {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.developer__link {
+  padding: 10px;
+
+  &:hover .developer__icon path {
+    fill: #46c1ae;
   }
 
-  .developer__link {
-    padding: 10px;
+  &:active {
+    opacity: 0.3;
   }
 }

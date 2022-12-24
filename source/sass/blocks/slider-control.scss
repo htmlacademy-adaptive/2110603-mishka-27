@@ -1,11 +1,17 @@
+@use "../global/mixins.scss";
+
 .slider-control {
   display: flex;
   justify-content: space-between;
   padding: 13px 30px;
 
+
+
   .slider-control__button {
+    @include mixins.text-hover-down;
     padding: 0 10px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
   }
 }

@@ -1,6 +1,7 @@
 @use "global/fonts.scss";
 @use "global/visually-hidden.scss";
 @use "global/mixins.scss";
+@use "global/variables.scss";
 @use "blocks/page.scss";
 @use "blocks/page-header.scss";
 @use "blocks/logo.scss";
@@ -12,10 +13,7 @@
 @use "blocks/menu-list.scss";
 @use "blocks/cart-link.scss";
 @use "blocks/link-with-icon.scss";
-@use "blocks/catalog-sections.scss";
-@use "blocks/catalog-list.scss";
-@use "blocks/decoration-link.scss";
-@use "blocks/toys-link.scss";
+@use "blocks/index-catalog.scss";
 @use "blocks/promotion.scss";
 @use "blocks/title.scss";
 @use "blocks/promo-product.scss";
@@ -26,7 +24,6 @@
 @use "blocks/review.scss";
 @use "blocks/slider-control.scss";
 @use "blocks/contacts.scss";
-@use "blocks/subscription.scss";
 @use "blocks/page-footer.scss";
 @use "blocks/socials.scss";
 @use "blocks/developer.scss";
@@ -46,3 +43,5 @@
 @use "blocks/form-legend.scss";
 @use "blocks/user-info.scss";
 @use "blocks/customer-name.scss";
+@use "blocks/form-button.scss";
+@use "blocks/footer-logo.scss";
