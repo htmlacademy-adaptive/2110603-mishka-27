@@ -1,3 +1,5 @@
+//Выпадающее мобильное меню
+
 let navMain = document.querySelector('.main-nav');
 
 let navToggle = document.querySelector('.menu-toggle');
@@ -19,3 +21,18 @@ navToggle.addEventListener('click', function () {
     navMain.classList.add('main-nav--active');
   }
 });
+
+//Модальное окно
+
+//let modal = document.querySelector('.modal-container');
+//let cartButton = document.querySelector('.product__button');
+//let modalButton = document.querySelector('.modal__button');
+
+//cartButton.addEventListener('click', function () {
+//    modal.classList.remove('modal-container--closed');
+//  });
+
+
+//modalButton.addEventListener('click', function() {
+//  modal.classList.add('modal-container--closed');
+//});

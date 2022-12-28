@@ -1,8 +1,11 @@
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
 .developer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 67px;
+  gap: 9px;
   align-items: center;
-  width: 196px;
+  width: 183px;
 }
 
 .developer__text {
@@ -13,13 +16,12 @@
 }
 
 .developer__link {
-  padding: 10px;
+  @include mixins.footer-icon-hover-down;
+  padding: 20px;
+}
 
-  &:hover .developer__icon path {
-    fill: #46c1ae;
-  }
-
-  &:active {
-    opacity: 0.3;
+@media (min-width: variables.$tablet-width) {
+  .developer {
+    padding: 31px 0 38px;
   }
 }

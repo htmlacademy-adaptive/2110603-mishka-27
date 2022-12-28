@@ -11,7 +11,9 @@
 
 .video__title {
   display: block;
-  margin: 0 13px 26px 91px;
+  padding: 21px 13px 26px 91px;
+  background: url("../../img/video-icon.svg") left 34px top 35px no-repeat;
+  background-size: 32px 22px;
 }
 
 .video__icon {
@@ -76,13 +78,12 @@
     margin: 0;
     padding-top: 41px;
     padding-left: 107px;
-    font-size: 20px;
-    line-height: 24px;
+    background-position: left 45px top 40px;
   }
 
   .video__text {
     order: 2;
-    padding: 24px 0 41px 40px;
+    padding: 0 40px 40px;
     font-size: 15px;
     line-height: 30px;
   }
@@ -100,6 +101,7 @@
     width: 1050px;
     display: grid;
     column-gap: 79px;
+    grid-template-columns: 682px 1fr;
     grid-template-areas:
       "video title"
       "video text"
@@ -108,18 +110,23 @@
 
   .video__container {
     grid-area: video;
-    width: 683px;
+    width: 682px;
   }
 
   .video__title {
     grid-area: title;
+    width: 230px;
     padding-top: 96px;
     padding-left: 0;
+    padding-bottom: 27px;
+    background-position: left top 40px;
   }
 
   .video__text {
     grid-area: text;
-    padding: 27px 36px 51px 0;
+    width: 230px;
+    padding: 0;
+    padding-bottom: 50px;
   }
 
   .video__cart-link {

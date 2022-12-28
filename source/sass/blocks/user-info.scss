@@ -3,14 +3,16 @@
 .user-info__list {
   list-style-type: none;
   padding: 0;
+  padding-top: 30px;
   margin: 0;
   display: grid;
-  gap: 22px;
+  gap: 25px;
 }
 
 .user-info__input {
   padding: 17px 0;
   width: 260px;
+  box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   font-size: 19px;
   line-height: 18px;
@@ -23,6 +25,7 @@
   width: 260px;
   height: 142px;
   padding: 17px;
+  margin-top: 25px;
   box-sizing: border-box;
   border: 2px solid #000000;
   font-family: "Open Sans", sans-serif;
@@ -33,16 +36,24 @@
 }
 
 @media (min-width: variables.$tablet-width) {
+  .user-info__list {
+    padding-top: 0;
+  }
+
   .user-info__input {
     width: 501px;
+    padding: 12px 21px;
+
   }
 
   .user-info__textarea {
     width: 501px;
+    margin: 0;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
+
   .user-info__input {
     width: 700px;
   }

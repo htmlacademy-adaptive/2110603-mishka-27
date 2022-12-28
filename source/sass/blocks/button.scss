@@ -1,10 +1,10 @@
 @use "../global/mixins.scss";
+@use "../global/variables.scss";
 
 .button {
   @include mixins.button-hover-down;
   display: block;
-  padding: 16px;
-  width: 260px;
+  padding: 14px;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -17,4 +17,10 @@
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .button {
+    font-size: 17px;
+  }
 }

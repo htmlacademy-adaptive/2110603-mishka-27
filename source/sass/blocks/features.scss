@@ -5,10 +5,16 @@
   font-size: 15px;
   line-height: 20px;
   color: #444444;
-  padding-bottom: 41px;
   text-align: left;
 }
 
-.features__item {
+.features__list {
+  border-bottom: 1px solid #ececec;
+}
+
+.features__item,
+.features__value {
   font-weight: 400;
+  padding: 9px 0;
+  border-bottom: 1px solid #ececec;
 }

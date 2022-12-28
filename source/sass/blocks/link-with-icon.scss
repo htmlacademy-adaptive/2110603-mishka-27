@@ -14,7 +14,24 @@
 }
 
 @media (min-width: variables.$tablet-width) {
-  .link-with-icon--no-text .link-with-icon__text {
-    display: none;
+  .link-with-icon {
+    display: grid;
+    grid-template-columns: 21px 183px;
+    gap: 29px;
+    padding: 25px 30px 31px;
+
+  }
+
+  .link-with-icon--no-text {
+    width: 82px;
+    box-sizing: border-box;
+
+    & .link-with-icon__text {
+      display: none;
+    }
+  }
+
+  .link-with-icon__icon {
+    margin: 0;
   }
 }
