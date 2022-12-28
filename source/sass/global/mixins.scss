@@ -2,9 +2,21 @@
 
 @mixin bottom-zigzag {
   background-image: url("../img/zigzag-line.svg");
-  background-position: bottom 0 left 0;
+  background-position: bottom left;
   background-repeat: repeat-x;
-  background-size: auto;
+  background-size: auto 6px;
+}
+
+@mixin tablet-bottom-zigzag {
+  background-image: url("../img/zigzag-line-desktop.svg");
+  background-size: auto 17px;
+}
+
+@mixin desktop-bottom-zigzag {
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: auto 23px;
+
 }
 
 //logo:hover :active
@@ -77,5 +89,18 @@
 
   &:active::after {
     background-color: rgba(98, 209, 186, 0.1);
+  }
+}
+
+
+// footer icons hover active
+
+@mixin footer-icon-hover-down {
+  &:hover svg path {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

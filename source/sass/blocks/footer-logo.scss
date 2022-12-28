@@ -19,5 +19,12 @@
 @media (min-width: variables.$tablet-width) {
   .footer-logo {
     display: block;
+    padding-top: 51px;
+    padding-bottom: 57px;
+  }
+
+  .footer-logo__logo {
+    padding: 0;
+
   }
 }

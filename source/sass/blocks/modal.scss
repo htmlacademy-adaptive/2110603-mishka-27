@@ -7,6 +7,7 @@
   align-items: center;
   margin: auto;
   width: 320px;
+  box-sizing: border-box;
   padding: 28px 30px 46px;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
@@ -20,6 +21,8 @@
   font-size: 25px;
   line-height: 30px;
   color: #000000;
+  margin: 0;
+  padding-bottom: 14px;
 }
 
 .modal__text {
@@ -40,11 +43,13 @@
 @media (min-width: variables.$tablet-width) {
   .modal {
     width: 566px;
+    padding: 37px 92px 46px;
   }
 
   .modal__title {
     font-size: 30px;
     line-height: 57px;
+    padding-bottom: 11px;
   }
 
   .modal__text {

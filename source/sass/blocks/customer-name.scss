@@ -5,8 +5,10 @@
 }
 
 .customer-name__input {
-  padding: 17px 0;
+  margin: 0;
+  padding: 12px 0;
   width: 260px;
+  box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   font-size: 19px;
   line-height: 18px;
@@ -16,21 +18,25 @@
 
 @media (min-width: variables.$tablet-width) {
   .customer-name {
-    grid-template-columns: min-content 375px;
-    gap: 25px;
+    display: flex;
+    width: 500px;
     align-items: center;
   }
 
   .customer-name__input {
-    width: 375px;
+    min-width: 375px;
+    padding-left: 17px;
+    margin-left: 25px;
+    flex-grow: 1;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .customer-name {
-    grid-template-columns: min-content 573px;
+    width: 700px;
   }
   .customer-name__input {
-    width: 573px;
+    min-width: 573px;
+    padding: 13px 17px;
   }
 }

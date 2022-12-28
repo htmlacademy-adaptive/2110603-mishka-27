@@ -5,3 +5,15 @@
   @include mixins.bottom-zigzag;
   position: relative;
 }
+
+@media (min-width: variables.$tablet-width) {
+  .promotion {
+    @include mixins.tablet-bottom-zigzag;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .promotion {
+    @include mixins.desktop-bottom-zigzag;
+  }
+}

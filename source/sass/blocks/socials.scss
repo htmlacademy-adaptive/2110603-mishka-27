@@ -1,7 +1,23 @@
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
 
 .socials__list {
-  padding: 25px 89px 28px;
+  padding: 28px 0;
+  margin: 0;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  gap: 17px;
+
+}
+
+.socials__link {
+  @include mixins.footer-icon-hover-down;
+  padding: 6px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .socials__list {
+    padding: 54px 0 60px;
+  }
 }

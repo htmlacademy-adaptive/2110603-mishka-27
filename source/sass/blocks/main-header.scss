@@ -12,17 +12,27 @@
 @media (min-width: variables.$tablet-width) {
   .main-header {
     height: 238px;
+    align-items: flex-start;
     background-image: url("../img/zigzag-fill-tablet.svg");
     background-repeat: repeat-x;
-    background-position: left 0 bottom 0;
+    background-position: left 50px bottom 0;
     background-size: auto 24px;
+  }
+
+  .main-header__title {
+    padding-top: 100px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .main-header {
     height: 272px;
+    background-image: url("../img/zigzag-fill-desktop.svg");
     background-size: auto 34px;
-    background-position: left 0 bottom -1px;
+    background-position: left bottom;
+  }
+
+  .main-header__title {
+    padding-top: 102px;
   }
 }

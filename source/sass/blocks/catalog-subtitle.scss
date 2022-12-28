@@ -1,7 +1,15 @@
+@use "../global/variables.scss";
+
 .catalog-subtitle {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: #000000;
   margin: 0;
+}
+@media (min-width: variables.$tablet-width) {
+  .catalog-subtitle {
+    font-size: 20px;
+  }
+
 }

@@ -2,10 +2,11 @@
 
 .page-header {
   position: relative;
+  box-shadow: 0 1px 0 #ececec;
 }
 
 .page-header__top {
-  padding: 22px 30px;
+  padding: 16px 30px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -18,8 +19,8 @@
 
 .page-header__toggle {
   position: absolute;
-  top: 22px;
-  right: 30px;
+  top: 19px;
+  right: 22px;
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -35,8 +36,8 @@
     padding: 0;
     position: absolute;
     z-index: 2;
-    top: 22px;
-    left: 50px;
+    top: 8px;
+    left: 32px;
 
   }
 
@@ -54,7 +55,7 @@
 
   .page-header__top {
     left: 50%;
-    transform: translateX(-75px);
-    width: 150px;
+    transform: translateX(-79px);
+    top: 3px;
   }
 }

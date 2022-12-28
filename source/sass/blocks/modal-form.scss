@@ -1,7 +1,7 @@
 @use "../global/variables.scss";
 
 .modal-form {
-  padding-top: 21px;
+  padding-top: 22px;
   display: grid;
   grid-template-columns: repeat(3, 82px);
   column-gap: 7px;
@@ -15,7 +15,7 @@
 .modal-form__name {
   display: block;
   margin: 0 auto;
-  padding: 18px 22px;
+  padding: 16px 22px;
   border: 2px solid rgba(68, 68, 68, 0.1);
   text-transform: uppercase;
   font-weight: 700;

@@ -1,17 +1,22 @@
 @use "../global/mixins.scss";
+@use "../global/variables.scss";
 
 .slider-control {
   display: flex;
   justify-content: space-between;
-  padding: 13px 30px;
+}
 
+.slider-control__button {
+  @include mixins.text-hover-down;
+  padding: 12px 39px 10px;
+  background-color: transparent;
+  border: 1px solid #ececec;
+  cursor: pointer;
+}
 
-
+@media (min-width: variables.$tablet-width) {
   .slider-control__button {
-    @include mixins.text-hover-down;
-    padding: 0 10px;
-    background-color: transparent;
+    padding: 0;
     border: none;
-    cursor: pointer;
   }
 }

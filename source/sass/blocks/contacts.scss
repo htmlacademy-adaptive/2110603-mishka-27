@@ -2,6 +2,8 @@
 @use "../global/mixins.scss";
 
 .contacts {
+  @include mixins.bottom-zigzag;
+  background-position: top left;
   padding: 38px 0 39px;
 }
 
@@ -15,7 +17,7 @@
 
 .contacts__wrapper {
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 30px 32px;
   width: 320px;
   box-sizing: border-box;
   display: flex;
@@ -25,9 +27,10 @@
 
 .contacts__inner {
   width: 100%;
-  padding-bottom: 36px;
-  display: flex;
-  justify-content: flex-start;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 30px;
 }
 
 .contacts__text,
@@ -41,15 +44,6 @@
   color: #444444;
 }
 
-.contacts__subtitle {
-  display: block;
-  width: 76px;
-}
-
-.contacts__subtitle {
-  padding-right: 30px;
-}
-
 .contacts__link {
   @include mixins.email-hover-down;
 
@@ -61,7 +55,6 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: 1px;
     width: 100%;
     height: 1px;
     background-color: #62d1ba;
@@ -69,6 +62,7 @@
 }
 .contacts__map {
   height: 454px;
+  margin-bottom: 40px;
 }
 .contacts__map iframe {
   width: 100%;
@@ -76,27 +70,31 @@
 
 .contacts__button {
   width: 260px;
-  margin: 40px auto;
+  margin: 0 auto;
 }
 
 @media (min-width: variables.$tablet-width) {
   .contacts {
+    @include mixins.tablet-bottom-zigzag;
     padding: 46px 0 57px;
   }
 
   .contacts__title {
     width: 768px;
-    padding: 22px 50px 49px;
+    padding: 40px 50px 50px;
+    background: url("../../img/flag.svg") right 52px top 17px no-repeat;
+    background-size: 47px 81px;
   }
 
   .contacts__wrapper {
     width: 768px;
-    padding: 0 50px 49px;
+    padding: 0 50px 18px;
     flex-direction: row;
   }
 
   .contacts__inner {
-    justify-content: flex-start;
+    width: 50%;
+    gap: 23px;
   }
 
   .contacts__text,
@@ -104,26 +102,25 @@
     font-size: 17px;
   }
 
-  .contacts__subtitle {
-    width: 82px;
-  }
-
   .contacts__map {
     height: 457px;
+    margin-bottom: 55px;
   }
 
   .contacts__button {
-    width: 240px;
+    width: 230px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .contacts {
-    padding: 71px 50px 105px;
+    @include mixins.desktop-bottom-zigzag;
+    background-position: top center;
+    padding: 94px 50px 105px;
     width: 1050px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: calc(1050px - 527px) 527px;
+    grid-template-columns: 523px 527px;
     grid-template-areas:
       "title map"
       "text map"
@@ -132,25 +129,34 @@
 
   .contacts__title {
     width: 523px;
-    padding: 79px 59px 34px 170px;
+    padding: 79px 59px 10px 175px;
     grid-area: title;
+    background-position: left 65px top 60px;
   }
 
   .contacts__map {
     grid-area: map;
+    margin: 0;
   }
 
   .contacts__wrapper {
+    padding-left: 175px;
     width: 523px;
-    padding-left: 170px;
     padding-bottom: 0;
     grid-area: text;
     flex-direction: column;
   }
 
+  .contacts__inner {
+    width: 100%;
+    gap: 24px;
+
+  }
+
   .contacts__button {
     grid-area: button;
     width: 230px;
-    margin-left: 170px;
+    margin-top: auto;
+    margin-left: 175px;
   }
 }

@@ -12,27 +12,33 @@
   padding-bottom: 17px;
 }
 
+.promo-product__title {
+  padding-bottom: 4px;
+}
+
 .promo-product__caption {
   margin: 0;
   padding: 0;
   font-weight: 700;
   font-size: 17px;
-  line-height: 17px;
+  line-height: 20px;
   color: #63d1bb;
   text-transform: uppercase;
 }
 
 .promo-product__description {
+  margin: 0 ;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #444444;
-  padding-bottom: 28px;
+  padding-bottom: 20px;
 }
 
 .promo-product__features {
   margin: 0;
   padding: 0;
+  padding-bottom: 26px;
 }
 
 .promo-product__image {
@@ -47,7 +53,7 @@
   text-align: center;
   padding: 0;
   margin: 0;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 .promo-product__button {
@@ -64,10 +70,12 @@
       "features image"
       "price image"
       "button image";
+    column-gap: 42px;
+    justify-content: space-between;
   }
 
   .promo-product__wrapper {
-    padding-bottom: 37px;
+    padding-bottom: 32px;
     grid-area: title;
     display: flex;
     justify-content: space-between;
@@ -75,7 +83,10 @@
   }
 
   .promo-product__caption {
-    width: 100px;
+    text-align: center;
+    width: 130px;
+    line-height: 17px;
+    padding-bottom: 15px;
   }
 
   .promo-product__description {
@@ -83,22 +94,27 @@
     font-size: 17px;
     line-height: 30px;
     color: #444444;
-    padding-bottom: 28px;
+    max-width: 292px;
+    padding-bottom: 39px;
   }
 
   .promo-product__features {
     grid-area: features;
-    margin: 0;
-    padding: 0;
+    padding-bottom: 57px;
   }
 
   .promo-product__image {
     grid-area: image;
+    width: 334px;
+    padding-top: 10px;
+    text-align: right;
   }
 
   .promo-product__price {
     grid-area: price;
     font-size: 20px;
+    padding-bottom: 33px;
+    width: 292px;
   }
 
   .promo-product__button {
@@ -109,9 +125,9 @@
 
 @media (min-width: variables.$desktop-width) {
   .promo-product {
+    position: relative;
     padding: 54px 50px 96px;
     width: 1150px;
-    position: relative;
     grid-template-areas:
       "title image"
       "text image"
@@ -121,11 +137,12 @@
   }
 
   .promo-product__wrapper {
-    width: 688px;
+    min-width: 688px;
     grid-area: title;
+    padding-top: 61px;
     z-index: 1;
     position: absolute;
-    left: 20px;
+    left: 15px;
   }
 
   .promo-product__title {
@@ -135,9 +152,9 @@
   .promo-product__description {
     font-size: 17px;
     line-height: 30px;
+    padding-top: 153px;
+    padding-bottom: 55px;
     padding-left: 175px;
-    padding-top: 92px;
-    padding-bottom: 60px;
   }
 
   .promo-product__features {
@@ -145,23 +162,21 @@
   }
 
   .promo-product__image {
+    padding: 0;
     grid-area: image;
     width: 525px;
-    padding-bottom: 25px;
   }
 
   .promo-product__price {
     grid-area: price;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    padding-top: 68px;
-    padding-bottom: 33px;
+    padding-top: 52px;
+    padding-bottom: 30px;
+    padding-left: 175px;
   }
 
   .promo-product__button {
-    margin-left: 175px;
     grid-area: button;
     width: 292px;
+    margin-left: 175px;
   }
 }

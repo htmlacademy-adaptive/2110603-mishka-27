@@ -4,17 +4,17 @@
   width: 100%;
   height: 281px;
   background-image: url("../img/header-background-image.jpg");
-  background-position: center top;
+  background-position: center top -21px;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 .index-header__title {
   width: 260px;
   text-align: center;
+  padding-top: 73px;
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -25,12 +25,16 @@
 
   .index-header__title {
     width: 100%;
+    padding-top: 155px;
   }
 }
 
 @media (min-width: variables.$desktop-width) {
   .index-header {
-    height: 631px;
-    background-image: url("../../img/header-background-image-tablet.jpg");
+    height: 627px;
+  }
+
+  .index-header__title {
+    padding-top: 158px;
   }
 }

@@ -1,4 +1,63 @@
+@use "../global/variables.scss";
+.form-control {
+  display: grid;
+  grid-template-columns: 42px 200px;
+  gap: 19px;
+  align-items: center;
+}
 
 .form-control__input {
-    background-color: transparent;
+  background-color: transparent;
+}
+
+.form-control__mark {
+  width: 38px;
+  height: 38px;
+  box-sizing: border-box;
+  border: 2px solid #444444;
+}
+
+.form-control__input[type="radio"] + .form-control__mark {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    position: relative;
+  }
+
+.form-control__input:not(.form-control__input[type="radio"]):checked + .form-control__mark {
+  background: url("../img/form-tick.svg") center no-repeat;
+  background-size: 23px 16px;
+}
+
+.form-control__input[type="radio"]:checked + .form-control__mark::before {
+  content: "";
+  position: absolute;
+  top: 26%;
+  left: 26%;
+  width: 18px;
+  height: 18px;
+  background-color: #62d1ba;
+  border-radius: 50%;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .form-control {
+    grid-template-columns: 52px 1fr;
+    gap: 29px;
+  }
+
+  .form-control__mark,
+  .form-control__input[type="radio"] + .form-control__mark {
+    width: 52px;
+    height: 52px;
+  }
+
+  .form-control__input:checked + .form-control__mark {
+    background-size: 32px 22px;
+  }
+
+  .form-control__input[type="radio"]:checked + .form-control__mark::before {
+    width: 22px;
+    height: 22px;
+  }
 }
