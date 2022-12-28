@@ -64,6 +64,8 @@ $pb-even: 22px;
     padding: 0 50px;
     max-width: 668px;
     position: relative;
+    top: -131px;
+    margin-bottom: -131px;
 
     &::after {
       content: "";
@@ -113,6 +115,8 @@ $pb-even: 22px;
 @media (min-width: variables.$desktop-width) {
   .index-catalog {
     max-width: 1050px;
+    top: -135px;
+    margin-bottom: -135px;
 
     &::after {
       height: 34px;

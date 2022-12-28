@@ -43,6 +43,7 @@
 
 .promo-product__image {
   padding-bottom: 25px;
+  object-fit: contain;
 }
 
 .promo-product__price {
@@ -106,6 +107,7 @@
   .promo-product__image {
     grid-area: image;
     width: 334px;
+    height: 404px;
     padding-top: 10px;
     text-align: right;
   }
@@ -129,7 +131,7 @@
     padding: 54px 50px 96px;
     width: 1150px;
     grid-template-areas:
-      "title image"
+      ". image"
       "text image"
       "features image"
       "price image"
@@ -138,11 +140,11 @@
 
   .promo-product__wrapper {
     min-width: 688px;
-    grid-area: title;
     padding-top: 61px;
     z-index: 1;
     position: absolute;
-    left: 15px;
+    left: 65px;
+    top: 55px;
   }
 
   .promo-product__title {
@@ -150,6 +152,7 @@
   }
 
   .promo-product__description {
+    grid-area: text;
     font-size: 17px;
     line-height: 30px;
     padding-top: 153px;
@@ -165,6 +168,7 @@
     padding: 0;
     grid-area: image;
     width: 525px;
+    height: 636px;
   }
 
   .promo-product__price {

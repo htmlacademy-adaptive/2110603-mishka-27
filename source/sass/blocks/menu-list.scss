@@ -35,6 +35,9 @@
     flex-direction: row;
   }
 
+  .menu-list__item {
+    box-shadow: none;
+  }
   .menu-list--catalog {
     justify-content: flex-start;
     position: absolute;

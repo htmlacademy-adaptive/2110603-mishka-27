@@ -75,7 +75,7 @@
 
 @media (min-width: variables.$desktop-width) {
   .review {
-    width: 1150px;
+    width: 100%;
     padding-left: 174px;
   }
 
@@ -87,10 +87,10 @@
   }
 
   .review__control {
-    right: 120px;
+    right: 20px;
   }
   .review__add-link {
-    right: 100px;
+    right: 0;
   }
 
 

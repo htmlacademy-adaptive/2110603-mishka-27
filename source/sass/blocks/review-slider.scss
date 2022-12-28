@@ -30,15 +30,15 @@
 
 @media (min-width: variables.$desktop-width) {
   .review-slider {
+    width: variables.$desktop-width;
     padding: 0 50px 163px;
-    width: 1150px;
-    margin: 0 auto;
     box-sizing: border-box;
+    margin: 0 auto;
     background-position: top 0 left 50px;
   }
 
   .review-slider__title {
-    width: 1150px;
+    width: 100%;
     padding-left: 174px;
     padding-top: 78px;
   }
