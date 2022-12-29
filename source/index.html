@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -118,7 +122,18 @@
               <td class="features__value">15 см</td>
             </tr>
           </table>
-          <img class="promo-product__image" src="img/promotion-product-photo.jpg" width="260" height="315" alt="Вязаные корзинки в трех размерах.">
+          <picture>
+            <source media="(min-width: 1200px)" 
+              srcset="img/promotion-product-photo-desktop.jpg 1x", 
+              srcset="img/promotion-product-photo-desktop-x2.jpg 2x">
+            <source media="(min-width: 768px)" 
+              srcset="img/promotion-product-photo-tablet.jpg 1x",  
+              srcset="img/promotion-product-photo-tablet-x2.jpg 2x"> 
+            <img class="promo-product__image" 
+              srcset="img/img/promotion-product-photo-x2.jpg 2x" 
+              src="img/promotion-product-photo.jpg" 
+              width="260" height="315" alt="Вязаные корзинки в трех размерах.">
+          </picture>
           <p class="promo-product__price">Цена: 990 руб.</p>
           <button class="promo-product__button button" type="button">Заказать</button>
         </div>

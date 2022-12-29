@@ -21,6 +21,12 @@
     background-size: 350px auto;
   }
 
+  @media (min-resolution: 2dppx) {
+    .review-slider {
+      background-image:  url("../img/review-back-tablet-x2.png");
+    }
+  }
+
   .review-slider__title {
     width: 768px;
     padding-left: 50px;
