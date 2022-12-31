@@ -17,27 +17,33 @@
 }
 
 .video__icon {
-  width: 100px;
+  background-color: transparent;
+  border: none;
+  width: 101px;
   height: auto;
+  cursor: pointer;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50px, -38px);
+  transform: translate(-50%, -50%);
+}
+
+.video__svg {
+  object-fit: contain;
 }
 
 .video__container {
   position: relative;
   cursor: pointer;
 
-  &:hover .video__icon {
+  &:hover .video__svg {
     width: 121px;
     height: auto;
   }
 
-  &:active .video__icon {
+  &:active .video__svg {
     width: 81px;
     opacity: 30%;
-    transform: translate(-30%, -50%);
   }
 }
 
@@ -71,6 +77,8 @@
 
   .video__poster {
     width: 100%;
+    height: auto;
+
   }
 
   .video__title {
