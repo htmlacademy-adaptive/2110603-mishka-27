@@ -3,10 +3,11 @@
 .index-header {
   width: 100%;
   height: 281px;
+  background-color: rgba(#f1f1f1, 0.4);
   background-image: url("../img/header-background-image.jpg");
   background-position: center top -18px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 320px auto;
   display: flex;
   justify-content: center;
 }
@@ -26,10 +27,9 @@
 @media (min-width: variables.$tablet-width) {
   .index-header {
     height: 758px;
-    background-color: rgba(#f1f1f1, 0.4);
     background-image: url("../../img/header-background-image-tablet.jpg");
     background-position: center top;
-    background-size: auto;
+    background-size: 768px auto;
   }
 
   @media (min-resolution: 2dppx) {
@@ -48,6 +48,7 @@
   .index-header {
     height: 763px;
     background-image: url("../img/header-background-image-desktop.jpg");
+    background-size: 1150px auto;
   }
 
   @media (min-resolution: 2dppx) {
