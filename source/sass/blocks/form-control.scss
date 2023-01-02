@@ -8,6 +8,15 @@
 
 .form-control__input {
   background-color: transparent;
+
+  &:hover ~ .form-control__mark,
+  &:focus ~ .form-control__mark {
+    border-color: #62d1ba;
+  }
+
+  &:active ~ .form-control__mark {
+    border-color: rgba(#000000, 0.3);
+  }
 }
 
 .form-control__mark {
@@ -15,6 +24,7 @@
   height: 38px;
   box-sizing: border-box;
   border: 2px solid #444444;
+  cursor: pointer;
 }
 
 .form-control__input[type="radio"] + .form-control__mark {

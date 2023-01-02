@@ -1,4 +1,5 @@
 @use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .user-info__list {
   list-style-type: none;
@@ -10,11 +11,12 @@
 }
 
 .user-info__input {
+  @include mixins.input-hover-down;
   padding: 17px 0;
   width: 260px;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 18px;
   border: none;
   border-bottom: 2px solid #000000;
@@ -33,6 +35,12 @@
   font-size: 17px;
   line-height: 18px;
   color: #000000;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 2px solid #62d1ba;
+  }
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -43,12 +51,15 @@
   .user-info__input {
     width: 501px;
     padding: 12px 21px;
+    font-size: 19px;
 
   }
 
   .user-info__textarea {
     width: 501px;
     margin: 0;
+    font-size: 19px;
+
   }
 }
 
