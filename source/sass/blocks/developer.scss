@@ -18,6 +18,10 @@
 .developer__link {
   @include mixins.footer-icon-hover-down;
   padding: 20px;
+
+  &:focus svg {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: variables.$tablet-width) {

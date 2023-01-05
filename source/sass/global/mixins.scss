@@ -25,6 +25,10 @@
   &:hover {
     opacity: 0.6;
   }
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
 
   &:active {
     opacity: 0.3;
@@ -34,9 +38,13 @@
 // Text:hover :active
 
 @mixin text-hover-down {
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
     opacity: 0.6;
   }
+
+
 
   &:active {
     opacity: 0.3;
@@ -46,11 +54,17 @@
 //link-with-icon:hover :active
 
 @mixin icon-hover-down {
-  &:hover &__text {
+  &:hover &__text,
+  &:focus &__text {
     opacity: 0.6;
   }
 
-  &:hover &__icon path {
+  &:focus {
+    outline: none;
+  }
+
+  &:hover &__icon,
+  &:focus &__icon {
     fill: #63d1bb;
     opacity: 1;
   }
@@ -59,7 +73,7 @@
     opacity: 0.3;
   }
 
-  &:active &__icon path {
+  &:active &__icon {
     opacity: 0.3;
   }
 }
@@ -67,40 +81,63 @@
 //button:hover :active
 
 @mixin button-hover-down {
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #444444;
     color: #ffffff;
   }
 
+  &:focus {
+    outline: none;
+  }
+
   &:active {
     background-color: #444444;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(#ffffff, 0.3);
   }
 }
 
 // email:hover :active
 
 @mixin email-hover-down {
-  &:hover .contacts__text {
+  &:hover .contacts__text,
+  &:focus .contacts__text {
     color: #46c1ae;
   }
 
-  //$email-color: opacify(#46C1AE, 0.1);
+  &:focus {
+    outline: none;
+  }
 
   &:active::after {
     background-color: rgba(98, 209, 186, 0.1);
   }
 }
 
-
 // footer icons hover active
 
 @mixin footer-icon-hover-down {
-  &:hover svg path {
+  &:hover svg,
+  &:focus svg {
     fill: #46c1ae;
+  }
+
+  &:focus {
+    outline: none;
   }
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+// form input:hover :active
+
+@mixin input-hover-down {
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    border-bottom: 2px solid #62d1ba;
   }
 }

@@ -46,7 +46,7 @@
 }
 .promo-product__image {
   padding-bottom: 25px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .promo-product__price {
@@ -75,7 +75,6 @@
       "price image"
       "button image";
     column-gap: 42px;
-    justify-content: space-between;
   }
 
   .promo-product__wrapper {

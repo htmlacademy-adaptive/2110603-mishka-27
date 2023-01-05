@@ -1,10 +1,12 @@
 @use "../global/variables.scss";
+@use "../global/mixins.scss";
 
 .customer-name {
   display: grid;
 }
 
 .customer-name__input {
+  @include mixins.input-hover-down;
   margin: 0;
   padding: 12px 0;
   width: 260px;

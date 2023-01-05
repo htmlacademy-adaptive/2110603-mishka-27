@@ -8,21 +8,28 @@
   row-gap: 31px;
 }
 
-.modal-form__input {
-  cursor: pointer;
-}
-
 .modal-form__name {
   display: block;
   margin: 0 auto;
   padding: 16px 22px;
-  border: 2px solid rgba(68, 68, 68, 0.1);
+  border: 2px solid rgba(#444444, 0.1);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: #444444;
   text-align: center;
+  cursor: pointer;
+}
+
+.modal-form__input {
+  &:hover + .modal-form__name {
+    border-color: #444444;
+  }
+
+  &:active + .modal-form__name {
+    border-color: #62d1ba;
+  }
 }
 
 .modal-form__input:checked + .modal-form__name {

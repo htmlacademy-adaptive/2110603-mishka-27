@@ -23,11 +23,11 @@
   text-decoration: none;
   cursor: pointer;
 
-  &:hover .index-catalog__icon path {
+  &:hover .index-catalog__icon {
     opacity: 0.7;
   }
 
-  &:active .index-catalog__icon path {
+  &:active .index-catalog__icon {
     opacity: 0.3;
   }
 }
@@ -37,23 +37,30 @@ $pb-even: 22px;
 .index-catalog__link--odd {
   background-color: #63d1bb;
   padding: 23px 36px #{$pb-odd} 30px;
+
+  &:hover,
+  &:focus {
+    background-color: #59d5bc;
+    padding-bottom: calc(#{$pb-odd} + 5px);
+    margin-top: -5px;
+    outline: none;
+  }
 }
 
 .index-catalog__link--even {
   background-color: #56c3b2;
   padding: 21px 27px #{$pb-even} 30px;
+
+  &:hover,
+  &:focus {
+    background-color: #46c1ae;
+    padding-bottom: calc(#{$pb-even} + 5px);
+    margin-top: -5px;
+    outline: none;
+  }
 }
 
-.index-catalog__link--odd:hover {
-  background-color: #59d5bc;
-  padding-bottom: calc(#{$pb-odd} + 5px);
-  margin-top: -5px;
-}
-.index-catalog__link--even:hover {
-  background-color: #46c1ae;
-  padding-bottom: calc(#{$pb-even} + 5px);
-  margin-top: -5px;
-}
+
 
 @media (min-width: variables.$tablet-width) {
   $pb-odd: 45px;
@@ -93,22 +100,24 @@ $pb-even: 22px;
 
   .index-catalog__link--odd {
     padding: 25px 36px #{$pb-odd};
+
+    &:hover,
+    &:focus {
+      background-color: #59d5bc;
+      padding-bottom: calc(#{$pb-odd} + 5px);
+      margin-top: -5px;
+    }
   }
 
   .index-catalog__link--even {
     padding: 25px 33px #{$pb-even} 36px;
-  }
 
-  .index-catalog__link--odd:hover {
-    background-color: #59d5bc;
-    padding-bottom: calc(#{$pb-odd} + 5px);
-    margin-top: -5px;
-  }
-
-  .index-catalog__link--even:hover {
-    background-color: #46c1ae;
-    padding-bottom: calc(#{$pb-even} + 5px);
-    margin-top: -5px;
+    &:hover,
+    &:focus {
+      background-color: #46c1ae;
+      padding-bottom: calc(#{$pb-even} + 5px);
+      margin-top: -5px;
+    }
   }
 }
 
