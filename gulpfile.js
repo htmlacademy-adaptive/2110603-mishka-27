@@ -71,13 +71,15 @@ const createWebp = () => {
 
 //SVG
 
- const svgMin = () => {
+const svg = () => {
   gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 }
 
 //Sprite
+
+
 
 const sprite = () => {
   return gulp.src('source/icons/*.svg')
@@ -158,11 +160,10 @@ const copy = (done) => {
   styles,
   html,
   script,
-  svgMin,
+  svg,
   sprite,
   createWebp
-  ),
-  );
+  ));
 
   // Default
 
@@ -174,7 +175,7 @@ const copy = (done) => {
   styles,
   html,
   script,
-  svgMin,
+  svg,
   sprite,
   createWebp
   ),
