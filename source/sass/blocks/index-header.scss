@@ -4,7 +4,7 @@
   width: 100%;
   height: 281px;
   background-color: rgba(#f1f1f1, 0.4);
-  background-image: url("../img/header-background-image.jpg");
+  background-image: url("../img/header-background-image.webp");
   background-position: center top -18px;
   background-repeat: no-repeat;
   background-size: 320px auto;
@@ -14,7 +14,7 @@
 
 @media (min-resolution: 2dppx) {
   .index-header {
-    background-image: url("../img/header-background-image-x2.jpg");
+    background-image: url("../img/header-background-image-x2.webp");
   }
 }
 
@@ -27,14 +27,14 @@
 @media (min-width: variables.$tablet-width) {
   .index-header {
     height: 758px;
-    background-image: url("../../img/header-background-image-tablet.jpg");
+    background-image: url("../img/header-background-image-tablet.webp");
     background-position: center top;
     background-size: 768px auto;
   }
 
   @media (min-resolution: 2dppx) {
     .index-header {
-      background-image: url("../img/header-background-image-tablet-x2.jpg");
+      background-image: url("../img/header-background-image-tablet-x2.webp");
     }
   }
 
@@ -47,13 +47,13 @@
 @media (min-width: variables.$desktop-width) {
   .index-header {
     height: 763px;
-    background-image: url("../img/header-background-image-desktop.jpg");
+    background-image: url("../img/header-background-image-desktop.webp");
     background-size: 1150px auto;
   }
 
   @media (min-resolution: 2dppx) {
     .index-header {
-      background-image: url("../img/header-background-image-desktop-x2.jpg");
+      background-image: url("../img/header-background-image-desktop-x2.webp");
     }
   }
 

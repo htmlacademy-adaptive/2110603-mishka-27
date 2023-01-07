@@ -32,6 +32,7 @@ export const styles = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
+  .pipe(htmlmin())
   .pipe(gulp.dest('build'));
   }
 
@@ -59,6 +60,13 @@ const copyImages = () => {
   .pipe(gulp.dest('build/img'))
 }
 
+// CopySVG
+
+const copySvg = () => {
+  return gulp.src('source/img/**/*.svg')
+  .pipe(gulp.dest('build/img'))
+}
+
  // WebP
 
 const createWebp = () => {
@@ -78,8 +86,6 @@ const svg = () => {
 }
 
 //Sprite
-
-
 
 const sprite = () => {
   return gulp.src('source/icons/*.svg')
@@ -170,7 +176,6 @@ const copy = (done) => {
   export default gulp.series(
   clean,
   copy,
-  copyImages,
   gulp.parallel(
   styles,
   html,
