@@ -1,5 +1,6 @@
 @use "../global/mixins.scss";
 @use "../global/variables.scss";
+
 .logo {
   @include mixins.logo-hover-down;
 }

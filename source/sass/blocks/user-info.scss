@@ -52,22 +52,20 @@
     width: 501px;
     padding: 12px 21px;
     font-size: 19px;
-
   }
 
   .user-info__textarea {
     width: 501px;
     margin: 0;
     font-size: 19px;
-
   }
 }
 
 @media (min-width: variables.$desktop-width) {
-
   .user-info__input {
     width: 700px;
   }
+
   .user-info__textarea {
     width: 700px;
   }

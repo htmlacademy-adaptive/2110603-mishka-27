@@ -5,8 +5,7 @@
 .main-nav {
   display: none;
 
-
-//  Открытое меню
+  //  Открытое меню
 
   &--active {
     position: absolute;
@@ -20,7 +19,7 @@
 }
 
 .main-nav--nojs {
-  position:static;
+  position: static;
 }
 
 .main-nav__note {
@@ -52,7 +51,6 @@
     line-height: 24px;
     color: #444444;
   }
-
 }
 
 @media (min-width: variables.$desktop-width) {

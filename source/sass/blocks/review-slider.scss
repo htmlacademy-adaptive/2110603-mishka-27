@@ -15,7 +15,7 @@
   .review-slider {
     padding-top: 82px;
     padding-bottom: 118px;
-    background-image:  url("../img/review-back-tablet.png");
+    background-image: url("../img/review-back-tablet.png");
     background-position: top 0 left 0;
     background-repeat: no-repeat;
     background-size: 350px auto;
@@ -23,7 +23,7 @@
 
   @media (min-resolution: 2dppx) {
     .review-slider {
-      background-image:  url("../img/review-back-tablet-x2.png");
+      background-image: url("../img/review-back-tablet-x2.png");
     }
   }
 
