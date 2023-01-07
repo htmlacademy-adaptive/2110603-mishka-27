@@ -34,7 +34,7 @@ const html = () => {
   return gulp.src('source/*.html')
   .pipe(htmlmin())
   .pipe(gulp.dest('build'));
-  }
+}
 
 // Script
 
@@ -43,11 +43,11 @@ const script = () => {
   // .pipe(terser)
   .pipe(gulp.dest('build/js'))
   .pipe(browser.stream());
-  }
+}
 
  // OptimizeImages
 
- const optimizeImages = () => {
+const optimizeImages = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'))
@@ -67,14 +67,14 @@ const copySvg = () => {
   .pipe(gulp.dest('build/img'))
 }
 
- // WebP
+// WebP
 
 const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
-    .pipe(squoosh({
-      webp: {}
-    }))
-    .pipe(gulp.dest('build/img'))
+  .pipe(squoosh({
+    webp: {}
+  }))
+  .pipe(gulp.dest('build/img'))
 }
 
 //SVG
@@ -101,10 +101,10 @@ const sprite = () => {
 
 export const css = () => {
   return gulp.src('./src/*.css')
-    .pipe(postcss([
-      autoprefixer(),
-    ]))
-    .pipe(gulp.dest('./dest'))
+  .pipe(postcss([
+    autoprefixer(),
+  ]))
+  .pipe(gulp.dest('./dest'))
 }
 
 // Copy
@@ -119,17 +119,17 @@ const copy = (done) => {
   })
   .pipe(gulp.dest('build'))
   done();
-  }
+}
 
-  // Clean
+// Clean
 
-  export const clean = () => {
+export const clean = () => {
   return del('build');
-  };
+};
 
-  // Server
+// Server
 
-  const server = (done) => {
+const server = (done) => {
   browser.init({
   server: {
   baseDir: 'build'
@@ -139,26 +139,26 @@ const copy = (done) => {
   ui: false,
   });
   done();
-  }
+}
 
-  // Reload
+// Reload
 
-  const reload = (done) => {
+const reload = (done) => {
   browser.reload();
   done();
-  }
+}
 
-  // Watcher
+// Watcher
 
-  const watcher = () => {
+const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/*.js', gulp.series(script));
   gulp.watch('source/*.html', gulp.series(html, reload));
-  }
+}
 
-  // Build
+// Build
 
-  export const build = gulp.series(
+export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
@@ -169,11 +169,11 @@ const copy = (done) => {
   svg,
   sprite,
   createWebp
-  ));
+));
 
-  // Default
+// Default
 
-  export default gulp.series(
+export default gulp.series(
   clean,
   copy,
   gulp.parallel(
@@ -187,4 +187,4 @@ const copy = (done) => {
   gulp.series(
   server,
   watcher
-  ));
+));
