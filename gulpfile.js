@@ -79,7 +79,7 @@ const createWebp = () => {
 
 //SVG
 
-const svg = () => {
+const svg = async () => {
   gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
@@ -87,12 +87,10 @@ const svg = () => {
 
 //Sprite
 
-const sprite = () => {
-  return gulp.src('source/icons/*.svg')
-  .pipe(svgo)
-  .pipe(svgstore({
-    inlineSvg: true
-    }))
+const sprite = async () => {
+  return gulp.src('source/img/icons/*.svg')
+  .pipe(svgo())
+  .pipe(svgstore({inlineSvg: true}))
   .pipe(rename('sprite.svg'))
   .pipe(gulp.dest('build/img'));
 }
