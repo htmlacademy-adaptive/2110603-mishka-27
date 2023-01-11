@@ -37,7 +37,9 @@
 
   .menu-list__item {
     box-shadow: none;
+    padding: 0;
   }
+
   .menu-list--catalog {
     justify-content: flex-start;
     position: absolute;
@@ -59,15 +61,11 @@
       border-left: 1px solid rgba(#000000, 0.1);
     }
   }
-
-  .menu-list__item {
-    padding: 0;
-  }
 }
 
 @media (min-width: variables.$desktop-width) {
   .menu-list--catalog {
-    position:static;
+    position: static;
 
     & .menu-list__item:not(:first-child) {
       border-left: 1px solid rgba(#000000, 0.1);
@@ -87,7 +85,6 @@
       padding-top: 32px;
       padding-bottom: 31px;
     }
-
   }
 
   .menu-list--deals {

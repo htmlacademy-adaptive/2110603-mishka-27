@@ -1,4 +1,5 @@
 @use "../global/variables.scss";
+
 .form-control {
   display: grid;
   grid-template-columns: 42px 200px;
@@ -28,13 +29,13 @@
 }
 
 .form-control__input[type="radio"] + .form-control__mark {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    position: relative;
-  }
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  position: relative;
+}
 
-.form-control__input:not(.form-control__input[type="radio"]):checked + .form-control__mark {
+.form-control__input:not([type="radio"]):checked + .form-control__mark {
   background: url("../img/form-tick.svg") center no-repeat;
   background-size: 23px 16px;
 }
