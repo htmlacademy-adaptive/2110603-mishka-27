@@ -8,11 +8,11 @@
 .customer-name__input {
   @include mixins.input-hover-down;
   margin: 0;
-  padding: 12px 0;
+  padding: 15px 0;
   width: 260px;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 18px;
   border: none;
   border-bottom: 2px solid #000000;
@@ -26,6 +26,7 @@
   }
 
   .customer-name__input {
+    font-size: 19px;
     min-width: 375px;
     padding-left: 17px;
     margin-left: 25px;
