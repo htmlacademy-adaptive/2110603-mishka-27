@@ -7,7 +7,25 @@
   padding-top: 30px;
   margin: 0;
   display: grid;
-  gap: 25px;
+  gap: 24px;
+}
+
+.user-info__label {
+  position: relative;
+}
+
+.user-info__icon {
+  position: absolute;
+}
+
+.user-info__input[name="tel"] + .user-info__icon {
+  top: 0;
+  right: 7px;
+}
+
+.user-info__input[name="email"] + .user-info__icon {
+  top: 0;
+  right: 3px;
 }
 
 .user-info__input {
@@ -43,15 +61,31 @@
   }
 }
 
+.user-info__input:hover + .user-info__icon,
+.user-info__input:focus + .user-info__icon {
+  fill: #62d1ba;
+  opacity: 1;
+
+}
+
 @media (min-width: variables.$tablet-width) {
   .user-info__list {
     padding-top: 0;
+    gap: 19px;
   }
 
   .user-info__input {
     width: 501px;
     padding: 12px 21px;
     font-size: 19px;
+  }
+
+  .user-info__input[name="tel"] + .user-info__icon {
+    right: 26px;
+  }
+
+  .user-info__input[name="email"] + .user-info__icon {
+    right: 22px;
   }
 
   .user-info__textarea {
@@ -62,8 +96,20 @@
 }
 
 @media (min-width: variables.$desktop-width) {
+  .user-info__list {
+    gap: 21px;
+  }
+
   .user-info__input {
     width: 700px;
+  }
+
+  .user-info__input[name="tel"] + .user-info__icon {
+    right: 8px;
+  }
+
+  .user-info__input[name="email"] + .user-info__icon {
+    right: 4px;
   }
 
   .user-info__textarea {

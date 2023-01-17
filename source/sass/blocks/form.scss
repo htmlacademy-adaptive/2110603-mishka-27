@@ -24,7 +24,7 @@
 
 .form__field {
   border: none;
-  padding: 0 30px 30px;
+  padding: 0 30px 33px;
   margin: 0 auto;
   width: 260px;
   box-sizing: border-box;
@@ -80,13 +80,13 @@
   }
 
   .form__wrapper {
-    padding: 50px 0;
+    padding: 49px 0;
   }
 
   .form__wrapper--grey {
     background-color: #f1f1f1;
     display: grid;
-    gap: 24px;
+    gap: 25px;
   }
 
   .form__button {
