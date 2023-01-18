@@ -11,13 +11,13 @@
   background-repeat: no-repeat;
   background-size: 20px auto;
 
-// Кнопка закрытия мобильного меню
+  // Кнопка закрытия мобильного меню
 
   &--close {
     background-image: url("../img/menu-close.svg");
   }
 
-// Кнопка при отключенном JS
+  // Кнопка при отключенном JS
 
   &--nojs {
     display: none;
