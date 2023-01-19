@@ -49,7 +49,7 @@
     & .menu-list__link {
       font-size: 15px;
       margin-left: 0;
-      padding: 19.5px;
+      padding: 22px 19px;
     }
   }
 
@@ -73,18 +73,12 @@
 
     & .menu-list__link {
       font-size: 17px;
-      padding: 32px;
+      padding: 32px 38px 32px 30px;
     }
   }
 
   .menu-list--user {
     order: 0;
-
-    & .menu-list__link {
-      font-size: 17px;
-      padding-top: 32px;
-      padding-bottom: 31px;
-    }
   }
 
   .menu-list--deals {
@@ -96,6 +90,7 @@
     & .menu-list__link {
       font-size: 15px;
       margin-left: 0;
+      padding: 29px 34px 28px 29px;
     }
   }
 }

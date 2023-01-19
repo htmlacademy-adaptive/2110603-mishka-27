@@ -3,15 +3,23 @@
 
 .link-with-icon {
   @include mixins.icon-hover-down;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+  padding: 28px;
   margin: 0;
+  cursor: pointer;
   display: flex;
   flex: none;
+
+  &__icon {
+    width: 21px;
+    margin-right: 25px;
+  }
 }
 
-.link-with-icon__icon {
-  width: 21px;
-  margin-right: 25px;
-}
 
 @media (min-width: variables.$tablet-width) {
   .link-with-icon {
@@ -32,5 +40,12 @@
 
   .link-with-icon__icon {
     margin: 0;
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .link-with-icon {
+    padding-top: 32px;
+    padding-bottom: 31px;
   }
 }

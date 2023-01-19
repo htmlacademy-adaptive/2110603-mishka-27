@@ -20,6 +20,11 @@
   list-style-type: none;
 }
 
+.advantages__text {
+  padding: 0;
+  margin: 0;
+}
+
 .advantages__item {
   font-weight: 700;
   font-size: 17px;
@@ -27,17 +32,37 @@
   color: #000000;
   display: grid;
   min-height: 123px;
-}
 
-.advantages__text {
-  padding: 0;
-  margin: 0;
+  & svg {
+    padding-top: 5px;
+    padding-left: 3px;
+  }
+
+  &:nth-child(2) svg {
+    padding-left: 0;
+  }
+
+  &:nth-child(3) svg {
+    padding-top: 6px;
+    padding-left: 8px;
+  }
+
+  &:nth-child(5) svg {
+    padding-left: 0;
+    margin-left: -5px;
+  }
+
+  &:nth-child(1) .advantages__text,
+  &:nth-child(4) .advantages__text,
+  &:nth-child(6) .advantages__text {
+    margin-top: -10px;
+  }
 }
 
 @media (min-width: variables.$tablet-width) {
   .advantages {
     width: 768px;
-    padding: 54px 50px 58px;
+    padding: 56px 50px 58px;
   }
 
   .advantages__title {
@@ -53,9 +78,44 @@
     line-height: 22px;
     min-height: 150px;
 
-    & svg {
-      padding-left: 10px;
-      padding-top: 20px;
+    &:first-child svg {
+      padding-left: 0;
+      padding-top: 15px;
+    }
+
+    &:nth-child(2) svg {
+      padding-left: 0;
+      padding-top: 22px;
+    }
+
+    &:nth-child(3) svg {
+      padding-top: 31px;
+      padding-left: 7px;
+    }
+
+    &:nth-child(4) svg {
+      padding-top: 19px;
+      padding-left: 0;
+      margin-left: -5px;
+    }
+
+    &:nth-child(5) svg {
+      padding-left: 0;
+      margin-left: -13px;
+      padding-top: 25px;
+    }
+
+    &:nth-child(6) svg {
+      padding-left: 0;
+      margin-left: -5px;
+      padding-top: 30px;
+      padding-bottom: 10px;
+    }
+
+    &:nth-child(4) .advantages__text,
+    &:nth-child(5) .advantages__text,
+    &:nth-child(6) .advantages__text {
+      margin-left: -8px;
     }
   }
 }
@@ -68,5 +128,57 @@
 
   .advantages__list {
     max-width: 675px;
+  }
+
+  .advantages__item {
+    &:first-child svg {
+      padding-left: 5px;
+      padding-top: 11px;
+    }
+
+    &:first-child .advantages__text {
+      margin-top: -15px;
+    }
+
+    &:nth-child(2) svg {
+      padding-left: 0;
+      padding-top: 20px;
+    }
+
+    &:nth-child(3) svg {
+      padding-top: 30px;
+      padding-left: 7px;
+    }
+
+    &:nth-child(4) svg {
+      padding-top: 17px;
+      padding-left: 7px;
+      margin-left: 0;
+    }
+
+    &:nth-child(5) svg {
+      margin-left: 0;
+      padding-bottom: 7px;
+    }
+
+    &:nth-child(6) svg {
+      padding-left: 10px;
+      margin-left: 0;
+      padding-top: 25px;
+      padding-bottom: 7px;
+    }
+
+    &:nth-child(2) .advantages__text,
+    &:nth-child(3) .advantages__text {
+      margin-top: -3px;
+    }
+
+    &:nth-child(4) .advantages__text,
+    &:nth-child(5) .advantages__text,
+    &:nth-child(6) .advantages__text {
+      margin-left: 0;
+      padding-left: 5px;
+      margin-top: -13px;
+    }
   }
 }

@@ -88,6 +88,7 @@
 
 @media (min-width: variables.$tablet-width) {
   .video {
+    padding-bottom: 46px;
     margin: 0 auto 64px;
     width: 668px;
   }
@@ -102,12 +103,13 @@
     margin: 0;
     padding-top: 41px;
     padding-left: 107px;
+    padding-bottom: 25px;
     background-position: left 45px top 40px;
   }
 
   .video__text {
     order: 2;
-    padding: 0 40px 40px;
+    padding: 0 40px 37px;
     font-size: 15px;
     line-height: 30px;
   }
