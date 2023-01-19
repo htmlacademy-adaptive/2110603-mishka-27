@@ -1,6 +1,4 @@
-@use "../global/mixins.scss";
 @use "../global/variables.scss";
-
 
 .main-nav {
   display: none;
@@ -45,8 +43,8 @@
   .main-nav__note {
     display: block;
     position: absolute;
-    bottom: -44px;
-    right: 22px;
+    bottom: -46px;
+    right: 20px;
   }
 
   .main-nav__text {
@@ -62,5 +60,9 @@
   .main-nav--active {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .main-nav__note {
+    right: 28px;
   }
 }

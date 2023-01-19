@@ -4,7 +4,7 @@
 
 .review-slider__title {
   display: block;
-  padding: 0 30px 14px;
+  padding: 0 30px 16px;
   margin: 0 auto;
   width: 320px;
   box-sizing: border-box;
@@ -37,7 +37,7 @@
 @media (min-width: variables.$desktop-width) {
   .review-slider {
     width: variables.$desktop-width;
-    padding: 0 50px 163px;
+    padding: 0 50px 165px;
     box-sizing: border-box;
     margin: 0 auto;
     background-position: top 0 left 50px;
@@ -46,6 +46,7 @@
   .review-slider__title {
     width: 100%;
     padding-left: 174px;
-    padding-top: 78px;
+    padding-top: 77px;
+    padding-bottom: 13px;
   }
 }
